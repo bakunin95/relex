@@ -1,61 +1,120 @@
-##WAVI Web Application Viewer (Node.js)
+##RELEX Relations extractor for web applications (Node.js)
 
-Generate a class diagram graph for node.js web application inspired by the Web Application Extension (WAE) for UML.
-It is also possible to generate a json report listing files and their relations with metrics.
-
-WAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover 
-the structure of a web application.
-
-
-## Dependency
-```
-Require Graphviz installed and PATH variable for Graphviz in your environment.
+Extract metrics and relations from the source code of a web application.
+Return a report in a JSON object or file.
+The report contain a list of the files with metrics extracted by escomplex, jslint, csslint and a list of relations between the files. 
 
 ## Installation
 
-    $ npm install wavi -g
+    $ npm install relex -g
 
+
+##Usage (CLI): 
+```
+relex path/to/website path/to/result/file.json
 ```
 
-##Usage: 
-
-It is strongly advised to use svg format for very large website because jpg/png/pdf are limited in width and height and will most likly not work
-or use ratio and the quality will be bad.
-
-wavi --format path/to/website path/to/result/file.type
-
+##Usage within node.js
 
 ```
-wavi --svg website_example result/example.svg
+var relex = require("relex");
 
-wavi --jpg website_example result/example.jpg
+relex.extract("path/to/webApp",function(err,report){
+	
+});
 
-wavi --png website_example result/example.png
-
-wavi --pdf website_example result/example.pdf
-
-wavi --dot website_example result/example.dot
-
-wavi --json website_example result/example.json
 ```
 
 ##Example:
 
 ![Example](/example/result/example.png?raw=true "Example")
 
-run example/example.cmd in node console
+run example/example.cmd in node console or node example.js
 
 
-##JSON report:
+##FILES (HTML/JS/CSS):
 
-List of all nodes and links with escomplex metrics.
-compatible with d3.js graph.
+|Type | Elements
+|------|----------
+|id | id of the file
+|name | name of the file
+|group |  group of the file
+|exist | if hosted on the server (true) else (false)
+|complexity | complexity metrics
+|complexityNormalyzed | normalyzed complexity metrics
 
-example of JSON structure coming soon
+##COMPOSITION (JS)
+|Type | Elements
+|------|----------
+|variables | variables contained in the javaScript
+|functions |  functions contained in the javaScript
+|objects |  object contained in the javaScript
+
+
+##INFOFILE (ALL)
+|Type | Elements
+|------|----------
+|file | name of the file
+|folder |  folder of the file
+|parentFolder |  folder of the parent
+
+##REPORT (JS/CSS)
+|Type | Elements
+|------|----------
+|id | ...
+|raw |  ...
+|code |  ...
+|line |  ...
+|character |  ...
+|a |  ...
+|reason |  ...
+
+##LINKS
+|Type | Elements
+|------|----------
+|source | id of the source file
+|target | id of the target file
+
+##COMPLEXITY EXAMPLE
+```
+"complexity": {
+                "aggregate": {
+                    "sloc": {
+                        "logical": 5,
+                        "physical": 11
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 5
+                        },
+                        "operands": {
+                            "distinct": 6,
+                            "total": 6
+                        },
+                        "length": 11,
+                        "vocabulary": 9,
+                        "difficulty": 1.5,
+                        "volume": 34.86917501586544,
+                        "effort": 52.303762523798156,
+                        "bugs": 0.011623058338621813,
+                        "time": 0.0008071568290709592
+                    },
+                    "params": 0,
+                    "line": 1,
+                    "cyclomaticDensity": 20
+                },
+                "functions": 2,
+                "dependencies": [],
+                "maintainability": 171,
+                "params": 0
+            }
+```
 
 ##Contributions
 
-This is a big project to help developers generate quality class diagram. WAVI is in early development and all contributions are welcomed.
+RELEX is in early development and all contributions are welcomed.
 For more info on the project contact me at jugle66@hotmail.com
 
 
