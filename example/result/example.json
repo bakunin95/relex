@@ -9,7 +9,7 @@
                 "folder": "website_example"
             },
             "id": 0,
-            "_id": "FI8oDX7lJoPDMNeH",
+            "_id": "NkkoXOBRmAqytqCS",
             "composition": [],
             "complexityNormalyzed": {
                 "reportCount": null
@@ -24,7 +24,7 @@
                 "folder": "website_example"
             },
             "id": 1,
-            "_id": "yK6VgSxrZv0CpoRR",
+            "_id": "EzZiZ10a81lwY0RU",
             "composition": [],
             "complexityNormalyzed": {
                 "reportCount": null
@@ -39,10 +39,26 @@
                 "folder": "website_example"
             },
             "id": 2,
-            "_id": "G3wWt0b0FAj3jshL",
+            "_id": "nOPfsOQmj62wR4Wf",
             "composition": [],
             "complexityNormalyzed": {
                 "reportCount": null
+            }
+        },
+        {
+            "name": "website_example/css/a.css",
+            "group": 3,
+            "exist": true,
+            "infoFile": {
+                "file": "a.css",
+                "folder": "website_example/css"
+            },
+            "id": 3,
+            "_id": "Z1DdfDEIVaqmjtTA",
+            "report": [],
+            "reportCount": 0,
+            "complexityNormalyzed": {
+                "reportCount": 0
             }
         },
         {
@@ -53,8 +69,8 @@
                 "file": "main.css",
                 "folder": "website_example/css"
             },
-            "id": 3,
-            "_id": "BvYnKs3G3aP7bc4G",
+            "id": 4,
+            "_id": "6VUWpgaEtuFhGRPQ",
             "report": [
                 {
                     "type": "warning",
@@ -79,22 +95,6 @@
             }
         },
         {
-            "name": "website_example/css/a.css",
-            "group": 3,
-            "exist": true,
-            "infoFile": {
-                "file": "a.css",
-                "folder": "website_example/css"
-            },
-            "id": 4,
-            "_id": "VV5nYaPjtODuKRH7",
-            "report": [],
-            "reportCount": 0,
-            "complexityNormalyzed": {
-                "reportCount": 0
-            }
-        },
-        {
             "name": "website_example/js/s.js",
             "group": 2,
             "exist": true,
@@ -104,7 +104,7 @@
                 "parentFolder": "website_example"
             },
             "id": 5,
-            "_id": "L1jRf0sQA7ia2Juy",
+            "_id": "MsWpm78Xm77ofSO6",
             "composition": {
                 "variables": [
                     "a",
@@ -222,7 +222,7 @@
                     "cyclomatic": 1,
                     "params": null,
                     "line": 1,
-                    "cyclomaticDensity": 0.2
+                    "cyclomaticDensity": 0
                 },
                 "maintainability": 1,
                 "functions": 1,
@@ -240,7 +240,7 @@
                 "parentFolder": "website_example"
             },
             "id": 6,
-            "_id": "tLyshYE841oUrEpk",
+            "_id": "Xrnjc4bOMg94dkQs",
             "composition": {
                 "variables": [
                     "foo"
@@ -322,7 +322,7 @@
                     "cyclomatic": 1,
                     "params": null,
                     "line": 1,
-                    "cyclomaticDensity": 1
+                    "cyclomaticDensity": 0
                 },
                 "maintainability": 0.9370612884259892,
                 "functions": 0,
@@ -340,7 +340,7 @@
                 "parentFolder": "website_example"
             },
             "id": 7,
-            "_id": "FRU3gmurE41IESo5",
+            "_id": "KaL2pyYMkc4IhAHy",
             "composition": {
                 "variables": [
                     "c",
@@ -599,71 +599,152 @@
                     "cyclomatic": 1,
                     "params": null,
                     "line": 1,
-                    "cyclomaticDensity": 0.125
+                    "cyclomaticDensity": 0
                 },
                 "maintainability": 1,
                 "functions": 1,
                 "params": null,
                 "reportCount": 1
             }
+        },
+        {
+            "name": "website_example/node_modules/a/module.js",
+            "group": 2,
+            "exist": true,
+            "infoFile": {
+                "file": "module.js",
+                "folder": "website_example/node_modules/a"
+            },
+            "id": 8,
+            "_id": "NXkER1cOUbwyQQXM",
+            "composition": {
+                "variables": [],
+                "functions": [],
+                "objects": []
+            },
+            "report": [],
+            "reportCount": 0,
+            "complexity": {
+                "aggregate": {
+                    "sloc": {
+                        "logical": 0,
+                        "physical": 1
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "operands": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "length": 0,
+                        "time": 0,
+                        "bugs": 0,
+                        "effort": 0,
+                        "volume": 0,
+                        "difficulty": 0,
+                        "vocabulary": 0
+                    },
+                    "params": 0,
+                    "line": 0,
+                    "cyclomaticDensity": null
+                },
+                "functions": 0,
+                "dependencies": [],
+                "maintainability": 171,
+                "params": 0
+            },
+            "complexityNormalyzed": {
+                "sloc": {},
+                "aggregate": {
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "operands": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "lngth": null,
+                        "vocabulary": 0,
+                        "difficulty": 0,
+                        "volume": 0,
+                        "effort": 0,
+                        "bugs": 0,
+                        "time": 0
+                    },
+                    "cyclomatic": 1,
+                    "params": null,
+                    "line": 0,
+                    "cyclomaticDensity": null
+                },
+                "maintainability": 1,
+                "functions": 0,
+                "params": null,
+                "reportCount": 0
+            }
         }
     ],
     "links": [
         {
             "source": 1,
-            "target": 5,
-            "_id": "7tc6jXXmG6UKA3KJ"
-        },
-        {
-            "source": 1,
-            "target": 3,
-            "_id": "BQpYbzPmXRgtaFmx"
-        },
-        {
-            "source": 2,
-            "target": 7,
-            "_id": "FKpfyrOJg6pO9UDR"
-        },
-        {
-            "source": 0,
-            "target": 4,
-            "_id": "JGXC62ux1A1xvjaW"
-        },
-        {
-            "source": 0,
             "target": 2,
-            "_id": "UDgwAKYKU7Q2RXq2"
-        },
-        {
-            "source": 2,
-            "target": 4,
-            "_id": "X11miSjFn9mBYzy7"
-        },
-        {
-            "source": 1,
-            "target": 2,
-            "_id": "cEaih8dNwPwrKEoK"
-        },
-        {
-            "source": 2,
-            "target": 5,
-            "_id": "hNBrmN2r18T5sV5E"
-        },
-        {
-            "source": 0,
-            "target": 1,
-            "_id": "kmr5tr8ihPdnJlSW"
+            "_id": "1EyuT8k4OqGnvJRZ"
         },
         {
             "source": 0,
             "target": 6,
-            "_id": "pbyBRuZYQ7T1WlDL"
+            "_id": "3bkZj20grQnfH4sd"
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "_id": "6MiIV95nYKbD4oFX"
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "_id": "EvdfuXtdB6ZldZzl"
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "_id": "HGvAjMj11xvbHefb"
+        },
+        {
+            "source": 0,
+            "target": 1,
+            "_id": "I0BuA5Yv60x9yyfU"
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "_id": "Tv3hBOrUnNWVnYTV"
+        },
+        {
+            "source": 2,
+            "target": 5,
+            "_id": "aGmfjlyz6oGgVm8n"
+        },
+        {
+            "source": 0,
+            "target": 2,
+            "_id": "uhMjJyAL7CdgUzWa"
+        },
+        {
+            "source": 0,
+            "target": 3,
+            "_id": "wU6GQ3iuYCNMNZ6n"
         }
     ],
     "info": {
         "groupCount": {
             "1": 3,
-            "2": 3,
+            "2": 4,
             "3": 2,
             "4": 0,
             "5": 0,

@@ -1,5 +1,5 @@
 var relex = require("../index.js");
 
-relex.extract("website_example",function(err,report){
+relex.extract("website_example",false,function(err,report){
 	console.log(report);
-})
+});

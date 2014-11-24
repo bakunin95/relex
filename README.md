@@ -1,7 +1,7 @@
-##RELEX Relations extractor for web applications (Node.js)
+##RELEX Relation extractor for web applications (Node.js)
 
 Extract metrics and relations from the source code of a web application.
-Return a report in a JSON object or file.
+Return a report in a file or JSON object.
 The report contain a list of the files with metrics extracted by escomplex, jslint, csslint and a list of relations between the files. 
 
 ## Installation
@@ -12,18 +12,26 @@ The report contain a list of the files with metrics extracted by escomplex, jsli
 ##Usage (CLI): 
 ```
 relex path/to/website path/to/result/file.json
+
+relex path/to/website path/to/result/file.json --skipnodemodules
 ```
 
 ##Usage within node.js
 
+relex.extract("path/to/webApp",skipnodemodules ...
+
+
 ```
 var relex = require("relex");
 
-relex.extract("path/to/webApp",function(err,report){
+relex.extract("path/to/webApp",false,function(err,report){
 	
 });
 
 ```
+##Parameter
+
+--skipnodemodules : skip node_modules folder, use this parameter to speed up extraction if "node_modules" is not needed.
 
 ##Example:
 
