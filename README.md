@@ -20,7 +20,6 @@ relex path/to/website path/to/result/file.json --includenodemodules
 
 relex.extract("path/to/webApp",includenodemodules ...
 
-
 ```
 var relex = require("relex");
 
@@ -39,6 +38,109 @@ relex.extract("path/to/webApp",false,function(err,report){
 
 run example/example.cmd in node console or node example.js
 
+##EXAMPLE RESULT FOR A JS FILE
+```
+{
+            "name": "website_example/js/s1.js",
+            "group": 2,
+            "exist": true,
+            "infoFile": {
+                "file": "s1.js",
+                "folder": "website_example/js",
+                "parentFolder": "website_example"
+            },
+            "id": 6,
+            "_id": "Xrnjc4bOMg94dkQs",
+            "composition": {
+                "variables": [
+                    "foo"
+                ],
+                "functions": [],
+                "objects": []
+            },
+            "report": [
+                {
+                    "id": "(error)",
+                    "raw": "'{a}' was used before it was defined.",
+                    "code": "used_before_a",
+                    "line": 1,
+                    "character": 11,
+                    "a": "require",
+                    "reason": "'require' was used before it was defined."
+                }
+            ],
+            "reportCount": 1,
+            "complexity": {
+                "aggregate": {
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 1
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 3
+                        },
+                        "operands": {
+                            "distinct": 3,
+                            "total": 3
+                        },
+                        "length": 6,
+                        "vocabulary": 6,
+                        "difficulty": 1.5,
+                        "volume": 15.509775004326936,
+                        "effort": 23.264662506490403,
+                        "bugs": 0.005169925001442312,
+                        "time": 0.00035902256954460497
+                    },
+                    "params": 0,
+                    "line": 1,
+                    "cyclomaticDensity": 100
+                },
+                "functions": 0,
+                "dependencies": [
+                    {
+                        "line": 1,
+                        "path": "data/data.json",
+                        "type": "CommonJS"
+                    }
+                ],
+                "maintainability": 160.23748032084416,
+                "params": 0
+            },
+            "complexityNormalyzed": {
+                "sloc": {},
+                "aggregate": {
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0.5,
+                            "total": 0.25
+                        },
+                        "operands": {
+                            "distinct": 0.25,
+                            "total": 0.21428571428571427
+                        },
+                        "lngth": null,
+                        "vocabulary": 0.3333333333333333,
+                        "difficulty": 0.42857142857142855,
+                        "volume": 0.14305528460401518,
+                        "effort": 0.061309407687435064,
+                        "bugs": 0.14305528460401518,
+                        "time": 0.061309407687435064
+                    },
+                    "cyclomatic": 1,
+                    "params": null,
+                    "line": 1,
+                    "cyclomaticDensity": 0
+                },
+                "maintainability": 0.9370612884259892,
+                "functions": 0,
+                "params": null,
+                "reportCount": 0.05263157894736842
+            }
+        }
+```
 
 ##FILES (HTML/JS/CSS):
 
@@ -83,42 +185,6 @@ run example/example.cmd in node console or node example.js
 |source | id of the source file
 |target | id of the target file
 
-##COMPLEXITY EXAMPLE
-```
-"complexity": {
-                "aggregate": {
-                    "sloc": {
-                        "logical": 5,
-                        "physical": 11
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 3,
-                            "total": 5
-                        },
-                        "operands": {
-                            "distinct": 6,
-                            "total": 6
-                        },
-                        "length": 11,
-                        "vocabulary": 9,
-                        "difficulty": 1.5,
-                        "volume": 34.86917501586544,
-                        "effort": 52.303762523798156,
-                        "bugs": 0.011623058338621813,
-                        "time": 0.0008071568290709592
-                    },
-                    "params": 0,
-                    "line": 1,
-                    "cyclomaticDensity": 20
-                },
-                "functions": 2,
-                "dependencies": [],
-                "maintainability": 171,
-                "params": 0
-            }
-```
 
 ##Contributions
 
