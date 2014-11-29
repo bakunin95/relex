@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander'),
+    constants = require( '../lib/deps/utilities/constants' );
+
+program
+  .version('0.1.0')
+  .option('--includenodemodules', 'include node_modules folder')
+  .parse(process.argv);
+  if(program.args.length == 0){
+		console.log(program.help());
+  }
+
+require('../lib/main')(program);

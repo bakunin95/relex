@@ -1,0 +1,1 @@
+node ../bin/relex website_example result/example.json

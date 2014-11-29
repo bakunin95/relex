@@ -1,0 +1,763 @@
+{
+    "nodes": [
+        {
+            "name": "website_example/a.html",
+            "group": 1,
+            "exist": true,
+            "infoFile": {
+                "file": "a.html",
+                "folder": "website_example"
+            },
+            "id": 0,
+            "_id": "NkkoXOBRmAqytqCS",
+            "composition": [],
+            "complexityNormalyzed": {
+                "reportCount": null
+            }
+        },
+        {
+            "name": "website_example/b.html",
+            "group": 1,
+            "exist": true,
+            "infoFile": {
+                "file": "b.html",
+                "folder": "website_example"
+            },
+            "id": 1,
+            "_id": "EzZiZ10a81lwY0RU",
+            "composition": [],
+            "complexityNormalyzed": {
+                "reportCount": null
+            }
+        },
+        {
+            "name": "website_example/c.html",
+            "group": 1,
+            "exist": true,
+            "infoFile": {
+                "file": "c.html",
+                "folder": "website_example"
+            },
+            "id": 2,
+            "_id": "nOPfsOQmj62wR4Wf",
+            "composition": [],
+            "complexityNormalyzed": {
+                "reportCount": null
+            }
+        },
+        {
+            "name": "website_example/css/a.css",
+            "group": 3,
+            "exist": true,
+            "infoFile": {
+                "file": "a.css",
+                "folder": "website_example/css"
+            },
+            "id": 3,
+            "_id": "Z1DdfDEIVaqmjtTA",
+            "report": [],
+            "reportCount": 0,
+            "complexityNormalyzed": {
+                "reportCount": 0
+            }
+        },
+        {
+            "name": "website_example/css/main.css",
+            "group": 3,
+            "exist": true,
+            "infoFile": {
+                "file": "main.css",
+                "folder": "website_example/css"
+            },
+            "id": 4,
+            "_id": "6VUWpgaEtuFhGRPQ",
+            "report": [
+                {
+                    "type": "warning",
+                    "line": 4,
+                    "col": 1,
+                    "message": "Rule is empty",
+                    "evidence": null,
+                    "rule": null
+                },
+                {
+                    "type": "warning",
+                    "line": 7,
+                    "col": 1,
+                    "message": "Rule is empty",
+                    "evidence": null,
+                    "rule": null
+                }
+            ],
+            "reportCount": 2,
+            "complexityNormalyzed": {
+                "reportCount": 0.10526315789473684
+            }
+        },
+        {
+            "name": "website_example/js/s.js",
+            "group": 2,
+            "exist": true,
+            "infoFile": {
+                "file": "s.js",
+                "folder": "website_example/js",
+                "parentFolder": "website_example"
+            },
+            "id": 5,
+            "_id": "MsWpm78Xm77ofSO6",
+            "composition": {
+                "variables": [
+                    "a",
+                    "b"
+                ],
+                "functions": [
+                    "barFunc()",
+                    "barFuncB()"
+                ],
+                "objects": []
+            },
+            "report": [
+                {
+                    "id": "(error)",
+                    "raw": "'{a}' was used before it was defined.",
+                    "code": "used_before_a",
+                    "line": 1,
+                    "character": 1,
+                    "a": "alert",
+                    "reason": "'alert' was used before it was defined."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
+                    "code": "expected_space_a_b",
+                    "line": 5,
+                    "character": 19,
+                    "a": ")",
+                    "b": "{",
+                    "reason": "Expected exactly one space between ')' and '{'."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Missing 'use strict' statement.",
+                    "code": "missing_use_strict",
+                    "line": 7,
+                    "character": 1,
+                    "a": "}",
+                    "reason": "Missing 'use strict' statement."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
+                    "code": "expected_space_a_b",
+                    "line": 9,
+                    "character": 20,
+                    "a": ")",
+                    "b": "{",
+                    "reason": "Expected exactly one space between ')' and '{'."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Missing 'use strict' statement.",
+                    "code": "missing_use_strict",
+                    "line": 11,
+                    "character": 1,
+                    "a": "}",
+                    "reason": "Missing 'use strict' statement."
+                }
+            ],
+            "reportCount": 5,
+            "complexity": {
+                "aggregate": {
+                    "sloc": {
+                        "logical": 5,
+                        "physical": 11
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 5
+                        },
+                        "operands": {
+                            "distinct": 6,
+                            "total": 6
+                        },
+                        "length": 11,
+                        "vocabulary": 9,
+                        "difficulty": 1.5,
+                        "volume": 34.86917501586544,
+                        "effort": 52.303762523798156,
+                        "bugs": 0.011623058338621813,
+                        "time": 0.0008071568290709592
+                    },
+                    "params": 0,
+                    "line": 1,
+                    "cyclomaticDensity": 20
+                },
+                "functions": 2,
+                "dependencies": [],
+                "maintainability": 171,
+                "params": 0
+            },
+            "complexityNormalyzed": {
+                "sloc": {},
+                "aggregate": {
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0.5,
+                            "total": 0.4166666666666667
+                        },
+                        "operands": {
+                            "distinct": 0.5,
+                            "total": 0.42857142857142855
+                        },
+                        "lngth": null,
+                        "vocabulary": 0.5,
+                        "difficulty": 0.42857142857142855,
+                        "volume": 0.3216178026057906,
+                        "effort": 0.1378362011167674,
+                        "bugs": 0.3216178026057906,
+                        "time": 0.13783620111676737
+                    },
+                    "cyclomatic": 1,
+                    "params": null,
+                    "line": 1,
+                    "cyclomaticDensity": 0
+                },
+                "maintainability": 1,
+                "functions": 1,
+                "params": null,
+                "reportCount": 0.2631578947368421
+            }
+        },
+        {
+            "name": "website_example/js/s1.js",
+            "group": 2,
+            "exist": true,
+            "infoFile": {
+                "file": "s1.js",
+                "folder": "website_example/js",
+                "parentFolder": "website_example"
+            },
+            "id": 6,
+            "_id": "Xrnjc4bOMg94dkQs",
+            "composition": {
+                "variables": [
+                    "foo"
+                ],
+                "functions": [],
+                "objects": []
+            },
+            "report": [
+                {
+                    "id": "(error)",
+                    "raw": "'{a}' was used before it was defined.",
+                    "code": "used_before_a",
+                    "line": 1,
+                    "character": 11,
+                    "a": "require",
+                    "reason": "'require' was used before it was defined."
+                }
+            ],
+            "reportCount": 1,
+            "complexity": {
+                "aggregate": {
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 1
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 3
+                        },
+                        "operands": {
+                            "distinct": 3,
+                            "total": 3
+                        },
+                        "length": 6,
+                        "vocabulary": 6,
+                        "difficulty": 1.5,
+                        "volume": 15.509775004326936,
+                        "effort": 23.264662506490403,
+                        "bugs": 0.005169925001442312,
+                        "time": 0.00035902256954460497
+                    },
+                    "params": 0,
+                    "line": 1,
+                    "cyclomaticDensity": 100
+                },
+                "functions": 0,
+                "dependencies": [
+                    {
+                        "line": 1,
+                        "path": "data/data.json",
+                        "type": "CommonJS"
+                    }
+                ],
+                "maintainability": 160.23748032084416,
+                "params": 0
+            },
+            "complexityNormalyzed": {
+                "sloc": {},
+                "aggregate": {
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0.5,
+                            "total": 0.25
+                        },
+                        "operands": {
+                            "distinct": 0.25,
+                            "total": 0.21428571428571427
+                        },
+                        "lngth": null,
+                        "vocabulary": 0.3333333333333333,
+                        "difficulty": 0.42857142857142855,
+                        "volume": 0.14305528460401518,
+                        "effort": 0.061309407687435064,
+                        "bugs": 0.14305528460401518,
+                        "time": 0.061309407687435064
+                    },
+                    "cyclomatic": 1,
+                    "params": null,
+                    "line": 1,
+                    "cyclomaticDensity": 0
+                },
+                "maintainability": 0.9370612884259892,
+                "functions": 0,
+                "params": null,
+                "reportCount": 0.05263157894736842
+            }
+        },
+        {
+            "name": "website_example/js/sClass.js",
+            "group": 2,
+            "exist": true,
+            "infoFile": {
+                "file": "sClass.js",
+                "folder": "website_example/js",
+                "parentFolder": "website_example"
+            },
+            "id": 7,
+            "_id": "KaL2pyYMkc4IhAHy",
+            "composition": {
+                "variables": [
+                    "c",
+                    "d"
+                ],
+                "functions": [
+                    "fooFuncA()",
+                    "fooFuncB()"
+                ],
+                "objects": [
+                    "fooClass"
+                ]
+            },
+            "report": [
+                {
+                    "id": "(error)",
+                    "raw": "'{a}' was used before it was defined.",
+                    "code": "used_before_a",
+                    "line": 1,
+                    "character": 1,
+                    "a": "alert",
+                    "reason": "'alert' was used before it was defined."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Use spaces, not tabs.",
+                    "code": "use_spaces",
+                    "line": 7,
+                    "character": 1,
+                    "a": "{",
+                    "reason": "Use spaces, not tabs."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected '{a}' at column {b}, not column {c}.",
+                    "code": "expected_a_at_b_c",
+                    "line": 7,
+                    "character": 2,
+                    "a": "varA",
+                    "b": 9,
+                    "c": 2,
+                    "reason": "Expected 'varA' at column 9, not column 2."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Use spaces, not tabs.",
+                    "code": "use_spaces",
+                    "line": 8,
+                    "character": 1,
+                    "a": ",",
+                    "reason": "Use spaces, not tabs."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected '{a}' at column {b}, not column {c}.",
+                    "code": "expected_a_at_b_c",
+                    "line": 8,
+                    "character": 2,
+                    "a": "varB",
+                    "b": 9,
+                    "c": 2,
+                    "reason": "Expected 'varB' at column 9, not column 2."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Use spaces, not tabs.",
+                    "code": "use_spaces",
+                    "line": 9,
+                    "character": 1,
+                    "a": ",",
+                    "reason": "Use spaces, not tabs."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected '{a}' at column {b}, not column {c}.",
+                    "code": "expected_a_at_b_c",
+                    "line": 9,
+                    "character": 2,
+                    "a": "fooFuncA",
+                    "b": 9,
+                    "c": 2,
+                    "reason": "Expected 'fooFuncA' at column 9, not column 2."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
+                    "code": "expected_space_a_b",
+                    "line": 9,
+                    "character": 20,
+                    "a": "function",
+                    "b": "(",
+                    "reason": "Expected exactly one space between 'function' and '('."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
+                    "code": "expected_space_a_b",
+                    "line": 9,
+                    "character": 22,
+                    "a": ")",
+                    "b": "{",
+                    "reason": "Expected exactly one space between ')' and '{'."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Use spaces, not tabs.",
+                    "code": "use_spaces",
+                    "line": 11,
+                    "character": 1,
+                    "a": "{",
+                    "reason": "Use spaces, not tabs."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Missing 'use strict' statement.",
+                    "code": "missing_use_strict",
+                    "line": 11,
+                    "character": 2,
+                    "a": "}",
+                    "reason": "Missing 'use strict' statement."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Use spaces, not tabs.",
+                    "code": "use_spaces",
+                    "line": 12,
+                    "character": 1,
+                    "a": ",",
+                    "reason": "Use spaces, not tabs."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected '{a}' at column {b}, not column {c}.",
+                    "code": "expected_a_at_b_c",
+                    "line": 12,
+                    "character": 2,
+                    "a": "fooFuncB",
+                    "b": 9,
+                    "c": 2,
+                    "reason": "Expected 'fooFuncB' at column 9, not column 2."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
+                    "code": "expected_space_a_b",
+                    "line": 12,
+                    "character": 20,
+                    "a": "function",
+                    "b": "(",
+                    "reason": "Expected exactly one space between 'function' and '('."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
+                    "code": "expected_space_a_b",
+                    "line": 12,
+                    "character": 22,
+                    "a": ")",
+                    "b": "{",
+                    "reason": "Expected exactly one space between ')' and '{'."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Use spaces, not tabs.",
+                    "code": "use_spaces",
+                    "line": 14,
+                    "character": 1,
+                    "a": "{",
+                    "reason": "Use spaces, not tabs."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Missing 'use strict' statement.",
+                    "code": "missing_use_strict",
+                    "line": 14,
+                    "character": 2,
+                    "a": "}",
+                    "reason": "Missing 'use strict' statement."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected '{a}' at column {b}, not column {c}.",
+                    "code": "expected_a_at_b_c",
+                    "line": 15,
+                    "character": 1,
+                    "a": "}",
+                    "b": 5,
+                    "c": 1,
+                    "reason": "Expected '}' at column 5, not column 1."
+                },
+                {
+                    "id": "(error)",
+                    "raw": "Expected '{a}' and instead saw '{b}'.",
+                    "code": "expected_a_b",
+                    "line": 15,
+                    "character": 2,
+                    "a": ";",
+                    "b": "(end)",
+                    "reason": "Expected ';' and instead saw '(end)'."
+                }
+            ],
+            "reportCount": 19,
+            "complexity": {
+                "aggregate": {
+                    "sloc": {
+                        "logical": 8,
+                        "physical": 16
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 6,
+                            "total": 12
+                        },
+                        "operands": {
+                            "distinct": 12,
+                            "total": 14
+                        },
+                        "length": 26,
+                        "vocabulary": 18,
+                        "difficulty": 3.5,
+                        "volume": 108.41805003750011,
+                        "effort": 379.4631751312504,
+                        "bugs": 0.036139350012500036,
+                        "time": 0.005855913196469914
+                    },
+                    "params": 0,
+                    "line": 1,
+                    "cyclomaticDensity": 12.5
+                },
+                "functions": 2,
+                "dependencies": [],
+                "maintainability": 171,
+                "params": 0
+            },
+            "complexityNormalyzed": {
+                "sloc": {},
+                "aggregate": {
+                    "halstead": {
+                        "operators": {
+                            "distinct": 1,
+                            "total": 1
+                        },
+                        "operands": {
+                            "distinct": 1,
+                            "total": 1
+                        },
+                        "lngth": null,
+                        "vocabulary": 1,
+                        "difficulty": 1,
+                        "volume": 1,
+                        "effort": 1,
+                        "bugs": 1,
+                        "time": 1
+                    },
+                    "cyclomatic": 1,
+                    "params": null,
+                    "line": 1,
+                    "cyclomaticDensity": 0
+                },
+                "maintainability": 1,
+                "functions": 1,
+                "params": null,
+                "reportCount": 1
+            }
+        },
+        {
+            "name": "website_example/node_modules/a/module.js",
+            "group": 2,
+            "exist": true,
+            "infoFile": {
+                "file": "module.js",
+                "folder": "website_example/node_modules/a"
+            },
+            "id": 8,
+            "_id": "NXkER1cOUbwyQQXM",
+            "composition": {
+                "variables": [],
+                "functions": [],
+                "objects": []
+            },
+            "report": [],
+            "reportCount": 0,
+            "complexity": {
+                "aggregate": {
+                    "sloc": {
+                        "logical": 0,
+                        "physical": 1
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "operands": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "length": 0,
+                        "time": 0,
+                        "bugs": 0,
+                        "effort": 0,
+                        "volume": 0,
+                        "difficulty": 0,
+                        "vocabulary": 0
+                    },
+                    "params": 0,
+                    "line": 0,
+                    "cyclomaticDensity": null
+                },
+                "functions": 0,
+                "dependencies": [],
+                "maintainability": 171,
+                "params": 0
+            },
+            "complexityNormalyzed": {
+                "sloc": {},
+                "aggregate": {
+                    "halstead": {
+                        "operators": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "operands": {
+                            "distinct": 0,
+                            "total": 0
+                        },
+                        "lngth": null,
+                        "vocabulary": 0,
+                        "difficulty": 0,
+                        "volume": 0,
+                        "effort": 0,
+                        "bugs": 0,
+                        "time": 0
+                    },
+                    "cyclomatic": 1,
+                    "params": null,
+                    "line": 0,
+                    "cyclomaticDensity": null
+                },
+                "maintainability": 1,
+                "functions": 0,
+                "params": null,
+                "reportCount": 0
+            }
+        }
+    ],
+    "links": [
+        {
+            "source": 1,
+            "target": 2,
+            "_id": "1EyuT8k4OqGnvJRZ"
+        },
+        {
+            "source": 0,
+            "target": 6,
+            "_id": "3bkZj20grQnfH4sd"
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "_id": "6MiIV95nYKbD4oFX"
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "_id": "EvdfuXtdB6ZldZzl"
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "_id": "HGvAjMj11xvbHefb"
+        },
+        {
+            "source": 0,
+            "target": 1,
+            "_id": "I0BuA5Yv60x9yyfU"
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "_id": "Tv3hBOrUnNWVnYTV"
+        },
+        {
+            "source": 2,
+            "target": 5,
+            "_id": "aGmfjlyz6oGgVm8n"
+        },
+        {
+            "source": 0,
+            "target": 2,
+            "_id": "uhMjJyAL7CdgUzWa"
+        },
+        {
+            "source": 0,
+            "target": 3,
+            "_id": "wU6GQ3iuYCNMNZ6n"
+        }
+    ],
+    "info": {
+        "groupCount": {
+            "1": 3,
+            "2": 4,
+            "3": 2,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+        }
+    }
+}
