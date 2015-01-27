@@ -9,8 +9,9 @@
                 "folder": "website_example"
             },
             "id": 0,
-            "_id": "NkkoXOBRmAqytqCS",
+            "_id": "kapVTeUB6LuE242p",
             "composition": [],
+            "cluster": 3,
             "complexityNormalyzed": {
                 "reportCount": null
             }
@@ -24,8 +25,9 @@
                 "folder": "website_example"
             },
             "id": 1,
-            "_id": "EzZiZ10a81lwY0RU",
+            "_id": "UrnugpbaZWbCSksR",
             "composition": [],
+            "cluster": 3,
             "complexityNormalyzed": {
                 "reportCount": null
             }
@@ -39,8 +41,9 @@
                 "folder": "website_example"
             },
             "id": 2,
-            "_id": "nOPfsOQmj62wR4Wf",
+            "_id": "XvzSd3Tx3xGbxDSV",
             "composition": [],
+            "cluster": 3,
             "complexityNormalyzed": {
                 "reportCount": null
             }
@@ -54,8 +57,14 @@
                 "folder": "website_example/css"
             },
             "id": 3,
-            "_id": "Z1DdfDEIVaqmjtTA",
+            "_id": "cTL3OddEFUhONPio",
+            "cluster": 3,
             "report": [],
+            "composition": {
+                "rules": [
+                    "p"
+                ]
+            },
             "reportCount": 0,
             "complexityNormalyzed": {
                 "reportCount": 0
@@ -70,7 +79,8 @@
                 "folder": "website_example/css"
             },
             "id": 4,
-            "_id": "6VUWpgaEtuFhGRPQ",
+            "_id": "6qN27vRqpY0EP5pu",
+            "cluster": 3,
             "report": [
                 {
                     "type": "warning",
@@ -89,6 +99,13 @@
                     "rule": null
                 }
             ],
+            "composition": {
+                "rules": [
+                    "body",
+                    "foo",
+                    "bar"
+                ]
+            },
             "reportCount": 2,
             "complexityNormalyzed": {
                 "reportCount": 0.10526315789473684
@@ -104,7 +121,8 @@
                 "parentFolder": "website_example"
             },
             "id": 5,
-            "_id": "MsWpm78Xm77ofSO6",
+            "_id": "5ip0tNLhIquUkbTN",
+            "cluster": 3,
             "composition": {
                 "variables": [
                     "a",
@@ -222,7 +240,7 @@
                     "cyclomatic": 1,
                     "params": null,
                     "line": 1,
-                    "cyclomaticDensity": 0
+                    "cyclomaticDensity": 0.2
                 },
                 "maintainability": 1,
                 "functions": 1,
@@ -240,7 +258,8 @@
                 "parentFolder": "website_example"
             },
             "id": 6,
-            "_id": "Xrnjc4bOMg94dkQs",
+            "_id": "6JEDNYKa0hlkaoUp",
+            "cluster": 3,
             "composition": {
                 "variables": [
                     "foo"
@@ -322,7 +341,7 @@
                     "cyclomatic": 1,
                     "params": null,
                     "line": 1,
-                    "cyclomaticDensity": 0
+                    "cyclomaticDensity": 1
                 },
                 "maintainability": 0.9370612884259892,
                 "functions": 0,
@@ -340,7 +359,8 @@
                 "parentFolder": "website_example"
             },
             "id": 7,
-            "_id": "KaL2pyYMkc4IhAHy",
+            "_id": "2nlPsMEnddrQFOBp",
+            "cluster": 3,
             "composition": {
                 "variables": [
                     "c",
@@ -599,7 +619,7 @@
                     "cyclomatic": 1,
                     "params": null,
                     "line": 1,
-                    "cyclomaticDensity": 0
+                    "cyclomaticDensity": 0.125
                 },
                 "maintainability": 1,
                 "functions": 1,
@@ -608,143 +628,77 @@
             }
         },
         {
-            "name": "website_example/node_modules/a/module.js",
-            "group": 2,
-            "exist": true,
-            "infoFile": {
-                "file": "module.js",
-                "folder": "website_example/node_modules/a"
-            },
+            "name": "data/data.json.js",
+            "group": 10,
             "id": 8,
-            "_id": "NXkER1cOUbwyQQXM",
-            "composition": {
-                "variables": [],
-                "functions": [],
-                "objects": []
-            },
-            "report": [],
-            "reportCount": 0,
-            "complexity": {
-                "aggregate": {
-                    "sloc": {
-                        "logical": 0,
-                        "physical": 1
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "operands": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "length": 0,
-                        "time": 0,
-                        "bugs": 0,
-                        "effort": 0,
-                        "volume": 0,
-                        "difficulty": 0,
-                        "vocabulary": 0
-                    },
-                    "params": 0,
-                    "line": 0,
-                    "cyclomaticDensity": null
-                },
-                "functions": 0,
-                "dependencies": [],
-                "maintainability": 171,
-                "params": 0
-            },
+            "_id": "2NsTMknKYKcRBJ2u",
+            "cluster": 1,
             "complexityNormalyzed": {
-                "sloc": {},
-                "aggregate": {
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "operands": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "lngth": null,
-                        "vocabulary": 0,
-                        "difficulty": 0,
-                        "volume": 0,
-                        "effort": 0,
-                        "bugs": 0,
-                        "time": 0
-                    },
-                    "cyclomatic": 1,
-                    "params": null,
-                    "line": 0,
-                    "cyclomaticDensity": null
-                },
-                "maintainability": 1,
-                "functions": 0,
-                "params": null,
-                "reportCount": 0
+                "reportCount": null
             }
         }
     ],
     "links": [
         {
             "source": 1,
-            "target": 2,
-            "_id": "1EyuT8k4OqGnvJRZ"
+            "target": 4,
+            "_id": "9RxFotMztbJXGkTA"
         },
         {
             "source": 0,
-            "target": 6,
-            "_id": "3bkZj20grQnfH4sd"
-        },
-        {
-            "source": 2,
-            "target": 7,
-            "_id": "6MiIV95nYKbD4oFX"
-        },
-        {
-            "source": 1,
-            "target": 5,
-            "_id": "EvdfuXtdB6ZldZzl"
-        },
-        {
-            "source": 2,
-            "target": 3,
-            "_id": "HGvAjMj11xvbHefb"
+            "target": 2,
+            "_id": "9rSsWho4Rc1nkgqk"
         },
         {
             "source": 0,
             "target": 1,
-            "_id": "I0BuA5Yv60x9yyfU"
+            "_id": "AgYwoLaIzH29wbDQ"
         },
         {
             "source": 1,
-            "target": 4,
-            "_id": "Tv3hBOrUnNWVnYTV"
+            "target": 2,
+            "_id": "HCriokO7SPkmt2IJ"
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "_id": "JWqqzUJqZRYCbHt2"
         },
         {
             "source": 2,
             "target": 5,
-            "_id": "aGmfjlyz6oGgVm8n"
+            "_id": "QD6eav6gdOfdc4mv"
         },
         {
             "source": 0,
-            "target": 2,
-            "_id": "uhMjJyAL7CdgUzWa"
+            "target": 6,
+            "_id": "bGxl2BoIIk1qtdbK"
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "_id": "lZQ5EXUmsTTHyDt9"
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "_id": "lxGmZumeE88vKGuu"
+        },
+        {
+            "source": 6,
+            "target": 8,
+            "_id": "qIpPK5a0KbTdvC1Y"
         },
         {
             "source": 0,
             "target": 3,
-            "_id": "wU6GQ3iuYCNMNZ6n"
+            "_id": "ts9koYP2lG7wZZ4E"
         }
     ],
     "info": {
         "groupCount": {
             "1": 3,
-            "2": 4,
+            "2": 3,
             "3": 2,
             "4": 0,
             "5": 0,
@@ -752,7 +706,7 @@
             "7": 0,
             "8": 0,
             "9": 0,
-            "10": 0,
+            "10": 1,
             "11": 0,
             "12": 0,
             "13": 0,
