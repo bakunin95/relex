@@ -1,27 +1,160 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'adduser' ]
+1 verbose cli   'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 error Error: canceled
-5 error     at Interface.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\read\lib\read.js:66:13)
-5 error     at Interface.emit (events.js:92:17)
-5 error     at Interface._ttyWrite (readline.js:621:16)
-5 error     at ReadStream.onkeypress (readline.js:100:10)
-5 error     at ReadStream.emit (events.js:98:17)
-5 error     at emitKey (readline.js:1096:12)
-5 error     at ReadStream.onData (readline.js:841:14)
-5 error     at ReadStream.emit (events.js:95:17)
-5 error     at ReadStream.<anonymous> (_stream_readable.js:765:14)
-5 error     at ReadStream.emit (events.js:92:17)
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Windows_NT 6.2.9200
-8 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "adduser"
-9 error cwd D:\npmPublish\relex
-10 error node -v v0.10.35
-11 error npm -v 1.4.28
-12 verbose exit [ 1, true ]
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\jo\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\jo\\AppData\\Roaming\\npm-cache\\relex\\0.2.0\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package.tgz
+13 verbose folder .
+14 info prepublish relex@0.2.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\jo\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile 9059574d-pm-cache-relex-0-2-0-package-tgz tar://C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package.tgz
+18 verbose lock tar://C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package.tgz C:\Users\jo\AppData\Roaming\npm-cache\9059574d-pm-cache-relex-0-2-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 9059574d-pm-cache-relex-0-2-0-package-tgz tar://C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package.tgz
+22 silly lockFile 9059574d-pm-cache-relex-0-2-0-package-tgz tar://C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package.tgz
+23 silly lockFile 687d451e-ng-npm-cache-relex-0-2-0-package C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package
+24 verbose lock C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package C:\Users\jo\AppData\Roaming\npm-cache\687d451e-ng-npm-cache-relex-0-2-0-package.lock
+25 silly lockFile 687d451e-ng-npm-cache-relex-0-2-0-package C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package
+26 silly lockFile 687d451e-ng-npm-cache-relex-0-2-0-package C:\Users\jo\AppData\Roaming\npm-cache\relex\0.2.0\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { author: { name: 'bakunin95' },
+29 silly publish   email: 'jugle66@hotmail.com',
+29 silly publish   name: 'relex',
+29 silly publish   version: '0.2.0',
+29 silly publish   main: './index.js',
+29 silly publish   url: 'https://github.com/bakunin95/relex',
+29 silly publish   repository: { type: 'git', url: 'https://github.com/bakunin95/relex' },
+29 silly publish   keywords:
+29 silly publish    [ 'relation',
+29 silly publish      'extractor',
+29 silly publish      'extract',
+29 silly publish      'reverse',
+29 silly publish      'engineering',
+29 silly publish      'documentation',
+29 silly publish      'report',
+29 silly publish      'source code',
+29 silly publish      'escomplex',
+29 silly publish      'lint',
+29 silly publish      'metrics',
+29 silly publish      'web',
+29 silly publish      'application',
+29 silly publish      'cli',
+29 silly publish      'wavi',
+29 silly publish      'relex' ],
+29 silly publish   description: 'Relex extract metrics and relations from the source code of a web application. Return a report in a file or JSON object. The report contain a list of the files and a list of relations between the files.',
+29 silly publish   licenses: [ { type: 'MIT' } ],
+29 silly publish   engines: { node: '>=0.10.0' },
+29 silly publish   dependencies:
+29 silly publish    { async: '^0.9.0',
+29 silly publish      cheerio: '^0.18.0',
+29 silly publish      commander: '^2.3.0',
+29 silly publish      'complexity-report': '^1.0.3',
+29 silly publish      css: '^2.1.0',
+29 silly publish      csslint: '^0.10.0',
+29 silly publish      detective: '^4.0.0',
+29 silly publish      'detective-amd': '^2.3.0',
+29 silly publish      escodegen: '^1.6.0',
+29 silly publish      'escomplex-js': '^0.1.4',
+29 silly publish      esprima: '^1.2.3',
+29 silly publish      esquery: '^0.3.0',
+29 silly publish      estraverse: '^1.5.0',
+29 silly publish      express: '~4.0.0',
+29 silly publish      'express-session': '~1.0.2',
+29 silly publish      'fast-path': '^1.1.0',
+29 silly publish      'fs-extra': '^0.10.0',
+29 silly publish      'graceful-fs': '^3.0.5',
+29 silly publish      jshint: '^2.5.1',
+29 silly publish      jslint: '^0.5.2',
+29 silly publish      json2csv: '^2.2.1',
+29 silly publish      lodash: '~2.4.1',
+29 silly publish      log: '^1.4.0',
+29 silly publish      mockgoose: '^1.10.7',
+29 silly publish      mongodb: '^1.4.28',
+29 silly publish      mongoose: '^3.8.21',
+29 silly publish      'mongoose-auto-increment': '^3.2.0',
+29 silly publish      nedb: '^0.11.1',
+29 silly publish      process: '^0.7.0',
+29 silly publish      'require-dir': '^0.1.0',
+29 silly publish      underscore: '^1.7.0',
+29 silly publish      xml2js: '^0.4.4' },
+29 silly publish   devDependencies: {},
+29 silly publish   bin: { relex: './bin/relex' },
+29 silly publish   readme: '##RELEX Relation extractor for web applications (Node.js)\r\n\r\nExtract metrics and relations from the source code of a web application.\r\nReturn a report in a file or JSON object.\r\nThe report contain a list of the files with metrics extracted by escomplex, jslint, csslint and a list of relations between the files. \r\n\r\n## Installation\r\n\r\n    $ npm install relex -g\r\n\r\n\r\n##Usage (CLI): \r\n```\r\nrelex path/to/website path/to/result/file.json\r\n\r\nrelex path/to/website path/to/result/file.json --includenodemodules\r\n```\r\n\r\n##Usage within node.js\r\n\r\nrelex.extract("path/to/webApp",includenodemodules ...\r\n\r\n```\r\nvar relex = require("relex");\r\n\r\nrelex.extract("path/to/webApp",false,function(err,report){\r\n\t\r\n});\r\n\r\n```\r\n##Parameter\r\n\r\n--includenodemodules : include node_modules folder, this parameter will add relations of "node_modules" files into the analysis.\r\n\r\n##Example:\r\n\r\n![Example](/example/result/example.png?raw=true "Example")\r\n\r\nrun example/example.cmd in node console or node example.js\r\n\r\n##EXAMPLE RESULT FOR A JS FILE\r\n```\r\n{\r\n            "name": "website_example/js/s1.js",\r\n            "group": 2,\r\n            "exist": true,\r\n            "infoFile": {\r\n                "file": "s1.js",\r\n                "folder": "website_example/js",\r\n                "parentFolder": "website_example"\r\n            },\r\n            "id": 6,\r\n            "_id": "Xrnjc4bOMg94dkQs",\r\n            "composition": {\r\n                "variables": [\r\n                    "foo"\r\n                ],\r\n                "functions": [],\r\n                "objects": []\r\n            },\r\n            "report": [\r\n                {\r\n                    "id": "(error)",\r\n                    "raw": "\'{a}\' was used before it was defined.",\r\n                    "code": "used_before_a",\r\n                    "line": 1,\r\n                    "character": 11,\r\n                    "a": "require",\r\n                    "reason": "\'require\' was used before it was defined."\r\n                }\r\n            ],\r\n            "reportCount": 1,\r\n            "complexity": {\r\n                "aggregate": {\r\n                    "sloc": {\r\n                        "logical": 1,\r\n                        "physical": 1\r\n                    },\r\n                    "cyclomatic": 1,\r\n                    "halstead": {\r\n                        "operators": {\r\n                            "distinct": 3,\r\n                            "total": 3\r\n                        },\r\n                        "operands": {\r\n                            "distinct": 3,\r\n                            "total": 3\r\n                        },\r\n                        "length": 6,\r\n                        "vocabulary": 6,\r\n                        "difficulty": 1.5,\r\n                        "volume": 15.509775004326936,\r\n                        "effort": 23.264662506490403,\r\n                        "bugs": 0.005169925001442312,\r\n                        "time": 0.00035902256954460497\r\n                    },\r\n                    "params": 0,\r\n                    "line": 1,\r\n                    "cyclomaticDensity": 100\r\n                },\r\n                "functions": 0,\r\n                "dependencies": [\r\n                    {\r\n                        "line": 1,\r\n                        "path": "data/data.json",\r\n                        "type": "CommonJS"\r\n                    }\r\n                ],\r\n                "maintainability": 160.23748032084416,\r\n                "params": 0\r\n            },\r\n            "complexityNormalyzed": {\r\n                "sloc": {},\r\n                "aggregate": {\r\n                    "halstead": {\r\n                        "operators": {\r\n                            "distinct": 0.5,\r\n                            "total": 0.25\r\n                        },\r\n                        "operands": {\r\n                            "distinct": 0.25,\r\n                            "total": 0.21428571428571427\r\n                        },\r\n                        "lngth": null,\r\n                        "vocabulary": 0.3333333333333333,\r\n                        "difficulty": 0.42857142857142855,\r\n                        "volume": 0.14305528460401518,\r\n                        "effort": 0.061309407687435064,\r\n                        "bugs": 0.14305528460401518,\r\n                        "time": 0.061309407687435064\r\n                    },\r\n                    "cyclomatic": 1,\r\n                    "params": null,\r\n                    "line": 1,\r\n                    "cyclomaticDensity": 0\r\n                },\r\n                "maintainability": 0.9370612884259892,\r\n                "functions": 0,\r\n                "params": null,\r\n                "reportCount": 0.05263157894736842\r\n            }\r\n        }\r\n```\r\n\r\n##FILES (HTML/JS/CSS):\r\n\r\n|Type | Elements\r\n|------|----------\r\n|id | id of the file\r\n|name | name of the file\r\n|group |  group of the file\r\n|exist | if hosted on the server (true) else (false)\r\n|complexity | complexity metrics\r\n|complexityNormalyzed | normalyzed complexity metrics\r\n\r\n##COMPOSITION (JS)\r\n|Type | Elements\r\n|------|----------\r\n|variables | variables contained in the javaScript\r\n|functions |  functions contained in the javaScript\r\n|objects |  object contained in the javaScript\r\n\r\n\r\n##INFOFILE (ALL)\r\n|Type | Elements\r\n|------|----------\r\n|file | name of the file\r\n|folder |  folder of the file\r\n|parentFolder |  folder of the parent\r\n\r\n##REPORT (JS/CSS)\r\n|Type | Elements\r\n|------|----------\r\n|id | ...\r\n|raw |  ...\r\n|code |  ...\r\n|line |  ...\r\n|character |  ...\r\n|a |  ...\r\n|reason |  ...\r\n\r\n##LINKS\r\n|Type | Elements\r\n|------|----------\r\n|source | id of the source file\r\n|target | id of the target file\r\n\r\n\r\n##Contributions\r\n\r\nRELEX is in early development and all contributions are welcomed.\r\nFor more info on the project contact me at jugle66@hotmail.com\r\n\r\n\r\n## License\r\n\r\nThe MIT License (MIT)\r\nCopyright (c) 2014 Bakunin95\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the "Software"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfurnished to do so, subject to the following conditions:\r\nThe above copyright notice and this permission notice shall be included in all\r\ncopies or substantial portions of the Software.\r\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\nSOFTWARE.\r\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: 'e516620051934a01d7bcacc968dad8af5a0b1628',
+29 silly publish   bugs: { url: 'https://github.com/bakunin95/relex/issues' },
+29 silly publish   homepage: 'https://github.com/bakunin95/relex',
+29 silly publish   _id: 'relex@0.2.0',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: '7d01954395ae2c157473b09af2dfc178358489b6',
+29 silly publish   _from: '.' }
+30 verbose request where is /relex
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id ed6a853352e58ea2
+33 verbose url raw /relex
+34 verbose url resolving [ 'https://registry.npmjs.org/', './relex' ]
+35 verbose url resolved https://registry.npmjs.org/relex
+36 verbose request where is https://registry.npmjs.org/relex
+37 info trying registry request attempt 1 at 15:29:49
+38 http PUT https://registry.npmjs.org/relex
+39 http 403 https://registry.npmjs.org/relex
+40 verbose headers { date: 'Tue, 27 Jan 2015 20:29:51 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '14644',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-atl6220-ATL',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1422390590.981063,VS0,VE349',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.2.0
+42 error old={"author":{"name":"bakunin95"},"email":"jugle66@hotmail.com","name":"relex","version":"0.2.0","main":"./index.js","url":"https://github.com/bakunin95/relex","repository":{"type":"git","url":"https://github.com/bakunin95/relex"},"keywords":["relation","extractor","extract","reverse","engineering","documentation","report","source code","escomplex","lint","metrics","web","application","cli","wavi","relex"],"description":"Relex extract metrics and relations from the source code of a web application. Return a report in a file or JSON object. The report contain a list of the files and a list of relations between the files.","licenses":[{"type":"MIT"}],"engines":{"node":">=0.10.0"},"dependencies":{"async":"^0.9.0","cheerio":"^0.18.0","commander":"^2.3.0","complexity-report":"^1.0.3","css":"^2.1.0","csslint":"^0.10.0","detective":"^4.0.0","detective-amd":"^2.3.0","escodegen":"^1.6.0","escomplex-js":"^0.1.4","esprima":"^1.2.3","esquery":"^0.3.0","estraverse":"^1.5.0","express":"~4.0.0","express-session":"~1.0.2","fast-path":"^1.1.0","fs-extra":"^0.10.0","graceful-fs":"^3.0.5","jshint":"^2.5.1","jslint":"^0.5.2","json2csv":"^2.2.1","lodash":"~2.4.1","log":"^1.4.0","mockgoose":"^1.10.7","mongodb":"^1.4.28","mongoose":"^3.8.21","mongoose-auto-increment":"^3.2.0","nedb":"^0.11.1","process":"^0.7.0","require-dir":"^0.1.0","underscore":"^1.7.0","xml2js":"^0.4.4"},"devDependencies":{},"bin":{"relex":"./bin/relex"},"gitHead":"69be58de6de44125b387065dbb06ea454d05679d","bugs":{"url":"https://github.com/bakunin95/relex/issues"},"homepage":"https://github.com/bakunin95/relex","_id":"relex@0.2.0","scripts":{},"_shasum":"7a4f12ed4465bd2199f0dc9b5f1da8155b6dcc9d","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"bakunin95","email":"jugle66@hotmail.com"},"maintainers":[{"name":"bakunin95","email":"jugle66@hotmail.com"}],"dist":{"shasum":"7a4f12ed4465bd2199f0dc9b5f1da8155b6dcc9d","tarball":"http://registry.npmjs.org/relex/-/relex-0.2.0.tgz"}}
+42 error new={"author":{"name":"bakunin95"},"email":"jugle66@hotmail.com","name":"relex","version":"0.2.0","main":"./index.js","url":"https://github.com/bakunin95/relex","repository":{"type":"git","url":"https://github.com/bakunin95/relex"},"keywords":["relation","extractor","extract","reverse","engineering","documentation","report","source code","escomplex","lint","metrics","web","application","cli","wavi","relex"],"description":"Relex extract metrics and relations from the source code of a web application. Return a report in a file or JSON object. The report contain a list of the files and a list of relations between the files.","licenses":[{"type":"MIT"}],"engines":{"node":">=0.10.0"},"dependencies":{"async":"^0.9.0","cheerio":"^0.18.0","commander":"^2.3.0","complexity-report":"^1.0.3","css":"^2.1.0","csslint":"^0.10.0","detective":"^4.0.0","detective-amd":"^2.3.0","escodegen":"^1.6.0","escomplex-js":"^0.1.4","esprima":"^1.2.3","esquery":"^0.3.0","estraverse":"^1.5.0","express":"~4.0.0","express-session":"~1.0.2","fast-path":"^1.1.0","fs-extra":"^0.10.0","graceful-fs":"^3.0.5","jshint":"^2.5.1","jslint":"^0.5.2","json2csv":"^2.2.1","lodash":"~2.4.1","log":"^1.4.0","mockgoose":"^1.10.7","mongodb":"^1.4.28","mongoose":"^3.8.21","mongoose-auto-increment":"^3.2.0","nedb":"^0.11.1","process":"^0.7.0","require-dir":"^0.1.0","underscore":"^1.7.0","xml2js":"^0.4.4"},"devDependencies":{},"bin":{"relex":"./bin/relex"},"readme":"##RELEX Relation extractor for web applications (Node.js)\u000d\u000a\u000d\u000aExtract metrics and relations from the source code of a web application.\u000d\u000aReturn a report in a file or JSON object.\u000d\u000aThe report contain a list of the files with metrics extracted by escomplex, jslint, csslint and a list of relations between the files. \u000d\u000a\u000d\u000a## Installation\u000d\u000a\u000d\u000a    $ npm install relex -g\u000d\u000a\u000d\u000a\u000d\u000a##Usage (CLI): \u000d\u000a```\u000d\u000arelex path/to/website path/to/result/file.json\u000d\u000a\u000d\u000arelex path/to/website path/to/result/file.json --includenodemodules\u000d\u000a```\u000d\u000a\u000d\u000a##Usage within node.js\u000d\u000a\u000d\u000arelex.extract(\"path/to/webApp\",includenodemodules ...\u000d\u000a\u000d\u000a```\u000d\u000avar relex = require(\"relex\");\u000d\u000a\u000d\u000arelex.extract(\"path/to/webApp\",false,function(err,report){\u000d\u000a\u0009\u000d\u000a});\u000d\u000a\u000d\u000a```\u000d\u000a##Parameter\u000d\u000a\u000d\u000a--includenodemodules : include node_modules folder, this parameter will add relations of \"node_modules\" files into the analysis.\u000d\u000a\u000d\u000a##Example:\u000d\u000a\u000d\u000a![Example](/example/result/example.png?raw=true \"Example\")\u000d\u000a\u000d\u000arun example/example.cmd in node console or node example.js\u000d\u000a\u000d\u000a##EXAMPLE RESULT FOR A JS FILE\u000d\u000a```\u000d\u000a{\u000d\u000a            \"name\": \"website_example/js/s1.js\",\u000d\u000a            \"group\": 2,\u000d\u000a            \"exist\": true,\u000d\u000a            \"infoFile\": {\u000d\u000a                \"file\": \"s1.js\",\u000d\u000a                \"folder\": \"website_example/js\",\u000d\u000a                \"parentFolder\": \"website_example\"\u000d\u000a            },\u000d\u000a            \"id\": 6,\u000d\u000a            \"_id\": \"Xrnjc4bOMg94dkQs\",\u000d\u000a            \"composition\": {\u000d\u000a                \"variables\": [\u000d\u000a                    \"foo\"\u000d\u000a                ],\u000d\u000a                \"functions\": [],\u000d\u000a                \"objects\": []\u000d\u000a            },\u000d\u000a            \"report\": [\u000d\u000a                {\u000d\u000a                    \"id\": \"(error)\",\u000d\u000a                    \"raw\": \"'{a}' was used before it was defined.\",\u000d\u000a                    \"code\": \"used_before_a\",\u000d\u000a                    \"line\": 1,\u000d\u000a                    \"character\": 11,\u000d\u000a                    \"a\": \"require\",\u000d\u000a                    \"reason\": \"'require' was used before it was defined.\"\u000d\u000a                }\u000d\u000a            ],\u000d\u000a            \"reportCount\": 1,\u000d\u000a            \"complexity\": {\u000d\u000a                \"aggregate\": {\u000d\u000a                    \"sloc\": {\u000d\u000a                        \"logical\": 1,\u000d\u000a                        \"physical\": 1\u000d\u000a                    },\u000d\u000a                    \"cyclomatic\": 1,\u000d\u000a                    \"halstead\": {\u000d\u000a                        \"operators\": {\u000d\u000a                            \"distinct\": 3,\u000d\u000a                            \"total\": 3\u000d\u000a                        },\u000d\u000a                        \"operands\": {\u000d\u000a                            \"distinct\": 3,\u000d\u000a                            \"total\": 3\u000d\u000a                        },\u000d\u000a                        \"length\": 6,\u000d\u000a                        \"vocabulary\": 6,\u000d\u000a                        \"difficulty\": 1.5,\u000d\u000a                        \"volume\": 15.509775004326936,\u000d\u000a                        \"effort\": 23.264662506490403,\u000d\u000a                        \"bugs\": 0.005169925001442312,\u000d\u000a                        \"time\": 0.00035902256954460497\u000d\u000a                    },\u000d\u000a                    \"params\": 0,\u000d\u000a                    \"line\": 1,\u000d\u000a                    \"cyclomaticDensity\": 100\u000d\u000a                },\u000d\u000a                \"functions\": 0,\u000d\u000a                \"dependencies\": [\u000d\u000a                    {\u000d\u000a                        \"line\": 1,\u000d\u000a                        \"path\": \"data/data.json\",\u000d\u000a                        \"type\": \"CommonJS\"\u000d\u000a                    }\u000d\u000a                ],\u000d\u000a                \"maintainability\": 160.23748032084416,\u000d\u000a                \"params\": 0\u000d\u000a            },\u000d\u000a            \"complexityNormalyzed\": {\u000d\u000a                \"sloc\": {},\u000d\u000a                \"aggregate\": {\u000d\u000a                    \"halstead\": {\u000d\u000a                        \"operators\": {\u000d\u000a                            \"distinct\": 0.5,\u000d\u000a                            \"total\": 0.25\u000d\u000a                        },\u000d\u000a                        \"operands\": {\u000d\u000a                            \"distinct\": 0.25,\u000d\u000a                            \"total\": 0.21428571428571427\u000d\u000a                        },\u000d\u000a                        \"lngth\": null,\u000d\u000a                        \"vocabulary\": 0.3333333333333333,\u000d\u000a                        \"difficulty\": 0.42857142857142855,\u000d\u000a                        \"volume\": 0.14305528460401518,\u000d\u000a                        \"effort\": 0.061309407687435064,\u000d\u000a                        \"bugs\": 0.14305528460401518,\u000d\u000a                        \"time\": 0.061309407687435064\u000d\u000a                    },\u000d\u000a                    \"cyclomatic\": 1,\u000d\u000a                    \"params\": null,\u000d\u000a                    \"line\": 1,\u000d\u000a                    \"cyclomaticDensity\": 0\u000d\u000a                },\u000d\u000a                \"maintainability\": 0.9370612884259892,\u000d\u000a                \"functions\": 0,\u000d\u000a                \"params\": null,\u000d\u000a                \"reportCount\": 0.05263157894736842\u000d\u000a            }\u000d\u000a        }\u000d\u000a```\u000d\u000a\u000d\u000a##FILES (HTML/JS/CSS):\u000d\u000a\u000d\u000a|Type | Elements\u000d\u000a|------|----------\u000d\u000a|id | id of the file\u000d\u000a|name | name of the file\u000d\u000a|group |  group of the file\u000d\u000a|exist | if hosted on the server (true) else (false)\u000d\u000a|complexity | complexity metrics\u000d\u000a|complexityNormalyzed | normalyzed complexity metrics\u000d\u000a\u000d\u000a##COMPOSITION (JS)\u000d\u000a|Type | Elements\u000d\u000a|------|----------\u000d\u000a|variables | variables contained in the javaScript\u000d\u000a|functions |  functions contained in the javaScript\u000d\u000a|objects |  object contained in the javaScript\u000d\u000a\u000d\u000a\u000d\u000a##INFOFILE (ALL)\u000d\u000a|Type | Elements\u000d\u000a|------|----------\u000d\u000a|file | name of the file\u000d\u000a|folder |  folder of the file\u000d\u000a|parentFolder |  folder of the parent\u000d\u000a\u000d\u000a##REPORT (JS/CSS)\u000d\u000a|Type | Elements\u000d\u000a|------|----------\u000d\u000a|id | ...\u000d\u000a|raw |  ...\u000d\u000a|code |  ...\u000d\u000a|line |  ...\u000d\u000a|character |  ...\u000d\u000a|a |  ...\u000d\u000a|reason |  ...\u000d\u000a\u000d\u000a##LINKS\u000d\u000a|Type | Elements\u000d\u000a|------|----------\u000d\u000a|source | id of the source file\u000d\u000a|target | id of the target file\u000d\u000a\u000d\u000a\u000d\u000a##Contributions\u000d\u000a\u000d\u000aRELEX is in early development and all contributions are welcomed.\u000d\u000aFor more info on the project contact me at jugle66@hotmail.com\u000d\u000a\u000d\u000a\u000d\u000a## License\u000d\u000a\u000d\u000aThe MIT License (MIT)\u000d\u000aCopyright (c) 2014 Bakunin95\u000d\u000aPermission is hereby granted, free of charge, to any person obtaining a copy\u000d\u000aof this software and associated documentation files (the \"Software\"), to deal\u000d\u000ain the Software without restriction, including without limitation the rights\u000d\u000ato use, copy, modify, merge, publish, distribute, sublicense, and/or sell\u000d\u000acopies of the Software, and to permit persons to whom the Software is\u000d\u000afurnished to do so, subject to the following conditions:\u000d\u000aThe above copyright notice and this permission notice shall be included in all\u000d\u000acopies or substantial portions of the Software.\u000d\u000aTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\u000d\u000aIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\u000d\u000aFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\u000d\u000aAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\u000d\u000aLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\u000d\u000aOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\u000d\u000aSOFTWARE.\u000d\u000a","readmeFilename":"README.md","gitHead":"e516620051934a01d7bcacc968dad8af5a0b1628","bugs":{"url":"https://github.com/bakunin95/relex/issues"},"homepage":"https://github.com/bakunin95/relex","_id":"relex@0.2.0","scripts":{},"_shasum":"7d01954395ae2c157473b09af2dfc178358489b6","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"bakunin95","email":"jugle66@hotmail.com"},"maintainers":[{"name":"bakunin95","email":"jugle66@hotmail.com"}],"dist":{"shasum":"7d01954395ae2c157473b09af2dfc178358489b6","tarball":"http://registry.npmjs.org/relex/-/relex-0.2.0.tgz"}}: relex
+42 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:442:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.2.9200
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd D:\npmPublish\relex
+47 error node -v v0.10.35
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
