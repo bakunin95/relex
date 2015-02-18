@@ -4,11 +4,7 @@
   },
   "email": "jugle66@hotmail.com",
   "name": "relex",
-<<<<<<< HEAD
-  "version": "0.2.1",
-=======
-  "version": "0.2.4",
->>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
+  "version": "0.2.3",
   "main": "./index.js",
   "url": "https://github.com/bakunin95/relex",
   "repository": {
@@ -47,7 +43,6 @@
     "cheerio": "^0.18.0",
     "commander": "^2.3.0",
     "css": "^2.1.0",
-<<<<<<< HEAD
     "csslint": "^0.10.0",
     "detective": "^4.0.0",
     "detective-amd": "^2.3.0",
@@ -66,18 +61,10 @@
     "lodash": "^3.0.0",
     "lodash-deep": "^1.5.3",
     "log": "^1.4.0",
-=======
-    "detective": "^4.0.0",
-    "detective-amd": "^2.3.0",
-    "esprima": "^1.2.3",
-    "esquery": "^0.3.0",
-    "graceful-fs": "^3.0.5",
     "json2csv": "^2.2.1",
-    "log": "^1.4.0",
     "mockgoose": "^1.10.7",
     "mongodb": "^1.4.28",
     "mongoose": "^3.8.21",
->>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
     "process": "^0.7.0",
     "require-dir": "^0.1.0",
     "underscore": "^1.7.0"

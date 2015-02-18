@@ -18,5 +18,9 @@ gulp.task('prepare', function(){
   gulp.src('./package.json')
   .pipe(bump({key: "version"}))
   .pipe(gulp.dest('./'));
+
+  gulp.src('./*')
+  .pipe(git.commit("auto-commit"));
+
 });
  
