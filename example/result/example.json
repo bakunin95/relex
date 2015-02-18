@@ -2,762 +2,890 @@
     "nodes": [
         {
             "name": "website_example/a.html",
-            "group": 1,
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "html",
             "exist": true,
-            "infoFile": {
-                "file": "a.html",
-                "folder": "website_example"
-            },
-            "id": 0,
-            "_id": "NkkoXOBRmAqytqCS",
-            "composition": [],
-            "complexityNormalyzed": {
-                "reportCount": null
-            }
+            "data": null,
+            "time": 1424286318600,
+            "cluster": null,
+            "file": "a.html",
+            "folder": "website_example",
+            "groupColor": "#FF0000",
+            "groupText": "HTML",
+            "groupFoci": "center",
+            "id": 0
         },
         {
             "name": "website_example/b.html",
-            "group": 1,
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "html",
             "exist": true,
-            "infoFile": {
-                "file": "b.html",
-                "folder": "website_example"
-            },
-            "id": 1,
-            "_id": "EzZiZ10a81lwY0RU",
-            "composition": [],
-            "complexityNormalyzed": {
-                "reportCount": null
-            }
-        },
-        {
-            "name": "website_example/c.html",
-            "group": 1,
-            "exist": true,
-            "infoFile": {
-                "file": "c.html",
-                "folder": "website_example"
-            },
-            "id": 2,
-            "_id": "nOPfsOQmj62wR4Wf",
-            "composition": [],
-            "complexityNormalyzed": {
-                "reportCount": null
-            }
-        },
-        {
-            "name": "website_example/css/a.css",
-            "group": 3,
-            "exist": true,
-            "infoFile": {
-                "file": "a.css",
-                "folder": "website_example/css"
-            },
-            "id": 3,
-            "_id": "Z1DdfDEIVaqmjtTA",
-            "report": [],
-            "reportCount": 0,
-            "complexityNormalyzed": {
-                "reportCount": 0
-            }
-        },
-        {
-            "name": "website_example/css/main.css",
-            "group": 3,
-            "exist": true,
-            "infoFile": {
-                "file": "main.css",
-                "folder": "website_example/css"
-            },
-            "id": 4,
-            "_id": "6VUWpgaEtuFhGRPQ",
-            "report": [
-                {
-                    "type": "warning",
-                    "line": 4,
-                    "col": 1,
-                    "message": "Rule is empty",
-                    "evidence": null,
-                    "rule": null
-                },
-                {
-                    "type": "warning",
-                    "line": 7,
-                    "col": 1,
-                    "message": "Rule is empty",
-                    "evidence": null,
-                    "rule": null
-                }
-            ],
-            "reportCount": 2,
-            "complexityNormalyzed": {
-                "reportCount": 0.10526315789473684
-            }
+            "data": null,
+            "time": 1424286318615,
+            "cluster": null,
+            "file": "b.html",
+            "folder": "website_example",
+            "groupColor": "#FF0000",
+            "groupText": "HTML",
+            "groupFoci": "center",
+            "id": 1
         },
         {
             "name": "website_example/js/s.js",
-            "group": 2,
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "js",
             "exist": true,
-            "infoFile": {
-                "file": "s.js",
-                "folder": "website_example/js",
-                "parentFolder": "website_example"
-            },
-            "id": 5,
-            "_id": "MsWpm78Xm77ofSO6",
-            "composition": {
-                "variables": [
-                    "a",
-                    "b"
-                ],
-                "functions": [
-                    "barFunc()",
-                    "barFuncB()"
-                ],
-                "objects": []
-            },
-            "report": [
-                {
-                    "id": "(error)",
-                    "raw": "'{a}' was used before it was defined.",
-                    "code": "used_before_a",
-                    "line": 1,
-                    "character": 1,
-                    "a": "alert",
-                    "reason": "'alert' was used before it was defined."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
-                    "code": "expected_space_a_b",
-                    "line": 5,
-                    "character": 19,
-                    "a": ")",
-                    "b": "{",
-                    "reason": "Expected exactly one space between ')' and '{'."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Missing 'use strict' statement.",
-                    "code": "missing_use_strict",
-                    "line": 7,
-                    "character": 1,
-                    "a": "}",
-                    "reason": "Missing 'use strict' statement."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
-                    "code": "expected_space_a_b",
-                    "line": 9,
-                    "character": 20,
-                    "a": ")",
-                    "b": "{",
-                    "reason": "Expected exactly one space between ')' and '{'."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Missing 'use strict' statement.",
-                    "code": "missing_use_strict",
-                    "line": 11,
-                    "character": 1,
-                    "a": "}",
-                    "reason": "Missing 'use strict' statement."
-                }
-            ],
-            "reportCount": 5,
-            "complexity": {
-                "aggregate": {
-                    "sloc": {
-                        "logical": 5,
-                        "physical": 11
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 3,
-                            "total": 5
-                        },
-                        "operands": {
-                            "distinct": 6,
-                            "total": 6
-                        },
-                        "length": 11,
-                        "vocabulary": 9,
-                        "difficulty": 1.5,
-                        "volume": 34.86917501586544,
-                        "effort": 52.303762523798156,
-                        "bugs": 0.011623058338621813,
-                        "time": 0.0008071568290709592
-                    },
-                    "params": 0,
-                    "line": 1,
-                    "cyclomaticDensity": 20
-                },
-                "functions": 2,
-                "dependencies": [],
-                "maintainability": 171,
-                "params": 0
-            },
-            "complexityNormalyzed": {
-                "sloc": {},
-                "aggregate": {
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0.5,
-                            "total": 0.4166666666666667
-                        },
-                        "operands": {
-                            "distinct": 0.5,
-                            "total": 0.42857142857142855
-                        },
-                        "lngth": null,
-                        "vocabulary": 0.5,
-                        "difficulty": 0.42857142857142855,
-                        "volume": 0.3216178026057906,
-                        "effort": 0.1378362011167674,
-                        "bugs": 0.3216178026057906,
-                        "time": 0.13783620111676737
-                    },
-                    "cyclomatic": 1,
-                    "params": null,
-                    "line": 1,
-                    "cyclomaticDensity": 0
-                },
-                "maintainability": 1,
-                "functions": 1,
-                "params": null,
-                "reportCount": 0.2631578947368421
-            }
-        },
-        {
-            "name": "website_example/js/s1.js",
-            "group": 2,
-            "exist": true,
-            "infoFile": {
-                "file": "s1.js",
-                "folder": "website_example/js",
-                "parentFolder": "website_example"
-            },
-            "id": 6,
-            "_id": "Xrnjc4bOMg94dkQs",
-            "composition": {
-                "variables": [
-                    "foo"
-                ],
-                "functions": [],
-                "objects": []
-            },
-            "report": [
-                {
-                    "id": "(error)",
-                    "raw": "'{a}' was used before it was defined.",
-                    "code": "used_before_a",
-                    "line": 1,
-                    "character": 11,
-                    "a": "require",
-                    "reason": "'require' was used before it was defined."
-                }
-            ],
-            "reportCount": 1,
-            "complexity": {
-                "aggregate": {
-                    "sloc": {
-                        "logical": 1,
-                        "physical": 1
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 3,
-                            "total": 3
-                        },
-                        "operands": {
-                            "distinct": 3,
-                            "total": 3
-                        },
-                        "length": 6,
-                        "vocabulary": 6,
-                        "difficulty": 1.5,
-                        "volume": 15.509775004326936,
-                        "effort": 23.264662506490403,
-                        "bugs": 0.005169925001442312,
-                        "time": 0.00035902256954460497
-                    },
-                    "params": 0,
-                    "line": 1,
-                    "cyclomaticDensity": 100
-                },
-                "functions": 0,
-                "dependencies": [
-                    {
-                        "line": 1,
-                        "path": "data/data.json",
-                        "type": "CommonJS"
-                    }
-                ],
-                "maintainability": 160.23748032084416,
-                "params": 0
-            },
-            "complexityNormalyzed": {
-                "sloc": {},
-                "aggregate": {
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0.5,
-                            "total": 0.25
-                        },
-                        "operands": {
-                            "distinct": 0.25,
-                            "total": 0.21428571428571427
-                        },
-                        "lngth": null,
-                        "vocabulary": 0.3333333333333333,
-                        "difficulty": 0.42857142857142855,
-                        "volume": 0.14305528460401518,
-                        "effort": 0.061309407687435064,
-                        "bugs": 0.14305528460401518,
-                        "time": 0.061309407687435064
-                    },
-                    "cyclomatic": 1,
-                    "params": null,
-                    "line": 1,
-                    "cyclomaticDensity": 0
-                },
-                "maintainability": 0.9370612884259892,
-                "functions": 0,
-                "params": null,
-                "reportCount": 0.05263157894736842
-            }
+            "data": null,
+            "time": 1424286318620,
+            "cluster": null,
+            "file": "s.js",
+            "folder": "website_example/js",
+            "groupColor": "#0000FF",
+            "groupText": "JS",
+            "groupFoci": "bottomLeft",
+            "id": 2
         },
         {
             "name": "website_example/js/sClass.js",
-            "group": 2,
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "js",
             "exist": true,
-            "infoFile": {
-                "file": "sClass.js",
-                "folder": "website_example/js",
-                "parentFolder": "website_example"
-            },
-            "id": 7,
-            "_id": "KaL2pyYMkc4IhAHy",
-            "composition": {
-                "variables": [
-                    "c",
-                    "d"
-                ],
-                "functions": [
-                    "fooFuncA()",
-                    "fooFuncB()"
-                ],
-                "objects": [
-                    "fooClass"
-                ]
-            },
-            "report": [
-                {
-                    "id": "(error)",
-                    "raw": "'{a}' was used before it was defined.",
-                    "code": "used_before_a",
-                    "line": 1,
-                    "character": 1,
-                    "a": "alert",
-                    "reason": "'alert' was used before it was defined."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Use spaces, not tabs.",
-                    "code": "use_spaces",
-                    "line": 7,
-                    "character": 1,
-                    "a": "{",
-                    "reason": "Use spaces, not tabs."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected '{a}' at column {b}, not column {c}.",
-                    "code": "expected_a_at_b_c",
-                    "line": 7,
-                    "character": 2,
-                    "a": "varA",
-                    "b": 9,
-                    "c": 2,
-                    "reason": "Expected 'varA' at column 9, not column 2."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Use spaces, not tabs.",
-                    "code": "use_spaces",
-                    "line": 8,
-                    "character": 1,
-                    "a": ",",
-                    "reason": "Use spaces, not tabs."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected '{a}' at column {b}, not column {c}.",
-                    "code": "expected_a_at_b_c",
-                    "line": 8,
-                    "character": 2,
-                    "a": "varB",
-                    "b": 9,
-                    "c": 2,
-                    "reason": "Expected 'varB' at column 9, not column 2."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Use spaces, not tabs.",
-                    "code": "use_spaces",
-                    "line": 9,
-                    "character": 1,
-                    "a": ",",
-                    "reason": "Use spaces, not tabs."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected '{a}' at column {b}, not column {c}.",
-                    "code": "expected_a_at_b_c",
-                    "line": 9,
-                    "character": 2,
-                    "a": "fooFuncA",
-                    "b": 9,
-                    "c": 2,
-                    "reason": "Expected 'fooFuncA' at column 9, not column 2."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
-                    "code": "expected_space_a_b",
-                    "line": 9,
-                    "character": 20,
-                    "a": "function",
-                    "b": "(",
-                    "reason": "Expected exactly one space between 'function' and '('."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
-                    "code": "expected_space_a_b",
-                    "line": 9,
-                    "character": 22,
-                    "a": ")",
-                    "b": "{",
-                    "reason": "Expected exactly one space between ')' and '{'."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Use spaces, not tabs.",
-                    "code": "use_spaces",
-                    "line": 11,
-                    "character": 1,
-                    "a": "{",
-                    "reason": "Use spaces, not tabs."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Missing 'use strict' statement.",
-                    "code": "missing_use_strict",
-                    "line": 11,
-                    "character": 2,
-                    "a": "}",
-                    "reason": "Missing 'use strict' statement."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Use spaces, not tabs.",
-                    "code": "use_spaces",
-                    "line": 12,
-                    "character": 1,
-                    "a": ",",
-                    "reason": "Use spaces, not tabs."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected '{a}' at column {b}, not column {c}.",
-                    "code": "expected_a_at_b_c",
-                    "line": 12,
-                    "character": 2,
-                    "a": "fooFuncB",
-                    "b": 9,
-                    "c": 2,
-                    "reason": "Expected 'fooFuncB' at column 9, not column 2."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
-                    "code": "expected_space_a_b",
-                    "line": 12,
-                    "character": 20,
-                    "a": "function",
-                    "b": "(",
-                    "reason": "Expected exactly one space between 'function' and '('."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected exactly one space between '{a}' and '{b}'.",
-                    "code": "expected_space_a_b",
-                    "line": 12,
-                    "character": 22,
-                    "a": ")",
-                    "b": "{",
-                    "reason": "Expected exactly one space between ')' and '{'."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Use spaces, not tabs.",
-                    "code": "use_spaces",
-                    "line": 14,
-                    "character": 1,
-                    "a": "{",
-                    "reason": "Use spaces, not tabs."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Missing 'use strict' statement.",
-                    "code": "missing_use_strict",
-                    "line": 14,
-                    "character": 2,
-                    "a": "}",
-                    "reason": "Missing 'use strict' statement."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected '{a}' at column {b}, not column {c}.",
-                    "code": "expected_a_at_b_c",
-                    "line": 15,
-                    "character": 1,
-                    "a": "}",
-                    "b": 5,
-                    "c": 1,
-                    "reason": "Expected '}' at column 5, not column 1."
-                },
-                {
-                    "id": "(error)",
-                    "raw": "Expected '{a}' and instead saw '{b}'.",
-                    "code": "expected_a_b",
-                    "line": 15,
-                    "character": 2,
-                    "a": ";",
-                    "b": "(end)",
-                    "reason": "Expected ';' and instead saw '(end)'."
-                }
-            ],
-            "reportCount": 19,
-            "complexity": {
-                "aggregate": {
-                    "sloc": {
-                        "logical": 8,
-                        "physical": 16
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 6,
-                            "total": 12
-                        },
-                        "operands": {
-                            "distinct": 12,
-                            "total": 14
-                        },
-                        "length": 26,
-                        "vocabulary": 18,
-                        "difficulty": 3.5,
-                        "volume": 108.41805003750011,
-                        "effort": 379.4631751312504,
-                        "bugs": 0.036139350012500036,
-                        "time": 0.005855913196469914
-                    },
-                    "params": 0,
-                    "line": 1,
-                    "cyclomaticDensity": 12.5
-                },
-                "functions": 2,
-                "dependencies": [],
-                "maintainability": 171,
-                "params": 0
-            },
-            "complexityNormalyzed": {
-                "sloc": {},
-                "aggregate": {
-                    "halstead": {
-                        "operators": {
-                            "distinct": 1,
-                            "total": 1
-                        },
-                        "operands": {
-                            "distinct": 1,
-                            "total": 1
-                        },
-                        "lngth": null,
-                        "vocabulary": 1,
-                        "difficulty": 1,
-                        "volume": 1,
-                        "effort": 1,
-                        "bugs": 1,
-                        "time": 1
-                    },
-                    "cyclomatic": 1,
-                    "params": null,
-                    "line": 1,
-                    "cyclomaticDensity": 0
-                },
-                "maintainability": 1,
-                "functions": 1,
-                "params": null,
-                "reportCount": 1
-            }
+            "data": null,
+            "time": 1424286318620,
+            "cluster": null,
+            "file": "sClass.js",
+            "folder": "website_example/js",
+            "groupColor": "#0000FF",
+            "groupText": "JS",
+            "groupFoci": "bottomLeft",
+            "id": 3
         },
         {
-            "name": "website_example/node_modules/a/module.js",
-            "group": 2,
+            "name": "website_example/css/a.css",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "css",
             "exist": true,
-            "infoFile": {
-                "file": "module.js",
-                "folder": "website_example/node_modules/a"
-            },
-            "id": 8,
-            "_id": "NXkER1cOUbwyQQXM",
-            "composition": {
-                "variables": [],
-                "functions": [],
-                "objects": []
-            },
-            "report": [],
-            "reportCount": 0,
-            "complexity": {
-                "aggregate": {
-                    "sloc": {
-                        "logical": 0,
-                        "physical": 1
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "operands": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "length": 0,
-                        "time": 0,
-                        "bugs": 0,
-                        "effort": 0,
-                        "volume": 0,
-                        "difficulty": 0,
-                        "vocabulary": 0
-                    },
-                    "params": 0,
-                    "line": 0,
-                    "cyclomaticDensity": null
-                },
-                "functions": 0,
-                "dependencies": [],
-                "maintainability": 171,
-                "params": 0
-            },
-            "complexityNormalyzed": {
-                "sloc": {},
-                "aggregate": {
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "operands": {
-                            "distinct": 0,
-                            "total": 0
-                        },
-                        "lngth": null,
-                        "vocabulary": 0,
-                        "difficulty": 0,
-                        "volume": 0,
-                        "effort": 0,
-                        "bugs": 0,
-                        "time": 0
-                    },
-                    "cyclomatic": 1,
-                    "params": null,
-                    "line": 0,
-                    "cyclomaticDensity": null
-                },
-                "maintainability": 1,
-                "functions": 0,
-                "params": null,
-                "reportCount": 0
-            }
+            "data": null,
+            "time": 1424286318625,
+            "cluster": null,
+            "file": "a.css",
+            "folder": "website_example/css",
+            "groupColor": "#009900",
+            "groupText": "CSS",
+            "groupFoci": "topRight",
+            "id": 4
+        },
+        {
+            "name": "website_example/css/main.css",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "css",
+            "exist": true,
+            "data": null,
+            "time": 1424286318625,
+            "cluster": null,
+            "file": "main.css",
+            "folder": "website_example/css",
+            "groupColor": "#009900",
+            "groupText": "CSS",
+            "groupFoci": "topRight",
+            "id": 5
+        },
+        {
+            "name": "website_example/js/s1.js",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "js",
+            "exist": true,
+            "data": null,
+            "time": 1424286318620,
+            "cluster": null,
+            "file": "s1.js",
+            "folder": "website_example/js",
+            "groupColor": "#0000FF",
+            "groupText": "JS",
+            "groupFoci": "bottomLeft",
+            "id": 6
+        },
+        {
+            "name": "website_example/c.html",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "html",
+            "exist": true,
+            "data": null,
+            "time": 1424286318610,
+            "cluster": null,
+            "file": "c.html",
+            "folder": "website_example",
+            "groupColor": "#FF0000",
+            "groupText": "HTML",
+            "groupFoci": "center",
+            "id": 7
+        },
+        {
+            "name": "website_example/css/a.css",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "css",
+            "exist": null,
+            "data": null,
+            "time": 1424286318685,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#009900",
+            "groupText": "CSS",
+            "groupFoci": "topRight",
+            "id": 8
+        },
+        {
+            "name": "website_example/c.html",
+            "rawType": null,
+            "rawName": "c.html",
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "html",
+            "exist": null,
+            "data": null,
+            "time": 1424286318695,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#FF0000",
+            "groupText": "HTML",
+            "groupFoci": "center",
+            "id": 9
+        },
+        {
+            "name": "website_example/js/s1.js",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "js-unreachable",
+            "exist": null,
+            "data": null,
+            "time": 1424286318695,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#6699FF",
+            "groupText": "JS",
+            "groupFoci": "bottomLeft",
+            "id": 10
+        },
+        {
+            "name": "website_example/b.html",
+            "rawType": null,
+            "rawName": "b.html",
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "html",
+            "exist": null,
+            "data": null,
+            "time": 1424286318690,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#FF0000",
+            "groupText": "HTML",
+            "groupFoci": "center",
+            "id": 11
+        },
+        {
+            "name": "website_example/css/a.css",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "css",
+            "exist": null,
+            "data": null,
+            "time": 1424286318700,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#009900",
+            "groupText": "CSS",
+            "groupFoci": "topRight",
+            "id": 12
+        },
+        {
+            "name": "website_example/js/s.js",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "js-unreachable",
+            "exist": null,
+            "data": null,
+            "time": 1424286318700,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#6699FF",
+            "groupText": "JS",
+            "groupFoci": "bottomLeft",
+            "id": 13
+        },
+        {
+            "name": "website_example/js/sClass.js",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "js-unreachable",
+            "exist": null,
+            "data": null,
+            "time": 1424286318700,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#6699FF",
+            "groupText": "JS",
+            "groupFoci": "bottomLeft",
+            "id": 14
+        },
+        {
+            "name": "website_example/css/main.css",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "css",
+            "exist": null,
+            "data": null,
+            "time": 1424286318705,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#009900",
+            "groupText": "CSS",
+            "groupFoci": "topRight",
+            "id": 15
+        },
+        {
+            "name": "website_example/c.html",
+            "rawType": null,
+            "rawName": "c.html",
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "html",
+            "exist": null,
+            "data": null,
+            "time": 1424286318710,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#FF0000",
+            "groupText": "HTML",
+            "groupFoci": "center",
+            "id": 16
+        },
+        {
+            "name": "website_example/js/s.js",
+            "rawType": null,
+            "rawName": null,
+            "rawValue": null,
+            "type": null,
+            "rootParent": null,
+            "rootParentId": null,
+            "group": "js-unreachable",
+            "exist": null,
+            "data": null,
+            "time": 1424286318710,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#6699FF",
+            "groupText": "JS",
+            "groupFoci": "bottomLeft",
+            "id": 17
+        },
+        {
+            "name": "website_example/js/s.js::barFunc()",
+            "rawType": null,
+            "rawName": "barFunc",
+            "rawValue": "",
+            "type": null,
+            "rootParent": "website_example/js/s.js",
+            "rootParentId": 2,
+            "group": "js-function",
+            "exist": null,
+            "data": null,
+            "time": 1424286318780,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#C45AEC",
+            "groupText": "JS-FUNC",
+            "groupFoci": "bottomLeft",
+            "id": 18
+        },
+        {
+            "name": "website_example/js/s.js::barFuncB()",
+            "rawType": null,
+            "rawName": "barFuncB",
+            "rawValue": "",
+            "type": null,
+            "rootParent": "website_example/js/s.js",
+            "rootParentId": 2,
+            "group": "js-function",
+            "exist": null,
+            "data": null,
+            "time": 1424286318785,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#C45AEC",
+            "groupText": "JS-FUNC",
+            "groupFoci": "bottomLeft",
+            "id": 19
+        },
+        {
+            "name": "website_example/js/sClass.js::fooClass",
+            "rawType": null,
+            "rawName": "fooClass",
+            "rawValue": null,
+            "type": null,
+            "rootParent": "website_example/js/sClass.js",
+            "rootParentId": 3,
+            "group": "js-object",
+            "exist": null,
+            "data": null,
+            "time": 1424286318805,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#B041FF",
+            "groupText": "JS-OBJ",
+            "groupFoci": "bottomLeft",
+            "id": 20
+        },
+        {
+            "name": "website_example/js/sClass.js::varA",
+            "rawType": "string",
+            "rawName": "varA",
+            "rawValue": "a",
+            "type": null,
+            "rootParent": "website_example/js/sClass.js",
+            "rootParentId": 3,
+            "group": "js-variable",
+            "exist": null,
+            "data": null,
+            "time": 1424286318810,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#C38EC7",
+            "groupText": "JS-VAR",
+            "groupFoci": "bottomLeft",
+            "id": 21
+        },
+        {
+            "name": "website_example/js/sClass.js::varB",
+            "rawType": "string",
+            "rawName": "varB",
+            "rawValue": "b",
+            "type": null,
+            "rootParent": "website_example/js/sClass.js",
+            "rootParentId": 3,
+            "group": "js-variable",
+            "exist": null,
+            "data": null,
+            "time": 1424286318815,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#C38EC7",
+            "groupText": "JS-VAR",
+            "groupFoci": "bottomLeft",
+            "id": 22
+        },
+        {
+            "name": "website_example/js/sClass.js::fooFuncA()",
+            "rawType": null,
+            "rawName": "fooFuncA",
+            "rawValue": "",
+            "type": null,
+            "rootParent": "website_example/js/sClass.js",
+            "rootParentId": 3,
+            "group": "js-function",
+            "exist": null,
+            "data": null,
+            "time": 1424286318815,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#C45AEC",
+            "groupText": "JS-FUNC",
+            "groupFoci": "bottomLeft",
+            "id": 23
+        },
+        {
+            "name": "website_example/js/sClass.js::fooFuncB()",
+            "rawType": null,
+            "rawName": "fooFuncB",
+            "rawValue": "",
+            "type": null,
+            "rootParent": "website_example/js/sClass.js",
+            "rootParentId": 3,
+            "group": "js-function",
+            "exist": null,
+            "data": null,
+            "time": 1424286318815,
+            "cluster": null,
+            "file": null,
+            "folder": null,
+            "groupColor": "#C45AEC",
+            "groupText": "JS-FUNC",
+            "groupFoci": "bottomLeft",
+            "id": 24
         }
     ],
     "links": [
         {
-            "source": 1,
-            "target": 2,
-            "_id": "1EyuT8k4OqGnvJRZ"
+            "source": 0,
+            "target": 8,
+            "relVar": "",
+            "type": "",
+            "id": 1
         },
         {
             "source": 0,
-            "target": 6,
-            "_id": "3bkZj20grQnfH4sd"
+            "target": 9,
+            "relVar": "",
+            "type": "",
+            "id": 2
+        },
+        {
+            "source": 0,
+            "target": 10,
+            "relVar": "",
+            "type": "",
+            "id": 3
+        },
+        {
+            "source": 0,
+            "target": 11,
+            "relVar": "",
+            "type": "",
+            "id": 4
+        },
+        {
+            "source": 7,
+            "target": 12,
+            "relVar": "",
+            "type": "",
+            "id": 5
+        },
+        {
+            "source": 7,
+            "target": 13,
+            "relVar": "",
+            "type": "",
+            "id": 6
+        },
+        {
+            "source": 7,
+            "target": 14,
+            "relVar": "",
+            "type": "",
+            "id": 7
+        },
+        {
+            "source": 1,
+            "target": 15,
+            "relVar": "",
+            "type": "",
+            "id": 8
+        },
+        {
+            "source": 1,
+            "target": 16,
+            "relVar": "",
+            "type": "",
+            "id": 9
+        },
+        {
+            "source": 1,
+            "target": 17,
+            "relVar": "",
+            "type": "",
+            "id": 10
         },
         {
             "source": 2,
-            "target": 7,
-            "_id": "6MiIV95nYKbD4oFX"
-        },
-        {
-            "source": 1,
-            "target": 5,
-            "_id": "EvdfuXtdB6ZldZzl"
+            "target": 18,
+            "relVar": "",
+            "type": "",
+            "id": 11
         },
         {
             "source": 2,
-            "target": 3,
-            "_id": "HGvAjMj11xvbHefb"
+            "target": 19,
+            "relVar": "",
+            "type": "",
+            "id": 12
         },
         {
-            "source": 0,
-            "target": 1,
-            "_id": "I0BuA5Yv60x9yyfU"
+            "source": 3,
+            "target": 20,
+            "relVar": "",
+            "type": "",
+            "id": 13
         },
         {
-            "source": 1,
-            "target": 4,
-            "_id": "Tv3hBOrUnNWVnYTV"
+            "source": 20,
+            "target": 21,
+            "relVar": "",
+            "type": "",
+            "id": 14
         },
         {
-            "source": 2,
-            "target": 5,
-            "_id": "aGmfjlyz6oGgVm8n"
+            "source": 20,
+            "target": 22,
+            "relVar": "",
+            "type": "",
+            "id": 15
         },
         {
-            "source": 0,
-            "target": 2,
-            "_id": "uhMjJyAL7CdgUzWa"
+            "source": 20,
+            "target": 23,
+            "relVar": "",
+            "type": "",
+            "id": 16
         },
         {
-            "source": 0,
-            "target": 3,
-            "_id": "wU6GQ3iuYCNMNZ6n"
+            "source": 20,
+            "target": 24,
+            "relVar": "",
+            "type": "",
+            "id": 17
         }
     ],
-    "info": {
-        "groupCount": {
-            "1": 3,
-            "2": 4,
-            "3": 2,
-            "4": 0,
-            "5": 0,
-            "6": 0,
-            "7": 0,
-            "8": 0,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0,
-            "14": 0,
-            "15": 0
+    "groups": [
+        {
+            "keyword": "html",
+            "label": "Html",
+            "color": "#FF0000",
+            "text": "HTML",
+            "count": 0,
+            "foci": "center"
+        },
+        {
+            "keyword": "html-element",
+            "label": "Html elements",
+            "color": "#00CCFF",
+            "text": "H-ELE",
+            "count": 0,
+            "foci": "center"
+        },
+        {
+            "keyword": "form",
+            "label": "Form",
+            "color": "#880000",
+            "text": "FORM",
+            "count": 0,
+            "foci": "topLeft"
+        },
+        {
+            "keyword": "form-element",
+            "label": "Form elements",
+            "color": "#996600",
+            "text": "F-ELE",
+            "count": 0,
+            "foci": "topLeft"
+        },
+        {
+            "keyword": "js",
+            "label": "JavaScripts",
+            "color": "#0000FF",
+            "text": "JS",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-markup",
+            "label": "JavaScripts Markup",
+            "color": "#D9D9FF",
+            "text": "JS",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-unreachable",
+            "label": "Unreachable JavaScripts",
+            "color": "#6699FF",
+            "text": "JS",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-object",
+            "label": "JavaScripts objects",
+            "color": "#B041FF",
+            "text": "JS-OBJ",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-array",
+            "label": "JavaScripts arrays",
+            "color": "#800080",
+            "text": "JS-ARR",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-function",
+            "label": "JavaScripts functions",
+            "color": "#C45AEC",
+            "text": "JS-FUNC",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-method",
+            "label": "JavaScripts methods",
+            "color": "#E6A9EC",
+            "text": "JS-MET",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-variable",
+            "label": "JavaScripts variable",
+            "color": "#C38EC7",
+            "text": "JS-VAR",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-method-call",
+            "label": "JavaScripts call",
+            "color": "#CC99FF",
+            "text": "JS-CALL",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "backbone-element",
+            "label": "Backbone elements",
+            "color": "#E6C4FF",
+            "text": "BBONE",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "angular-js-element",
+            "label": "Angular javascript elements",
+            "color": "#AECFC6",
+            "text": "ANG",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "angular-html-element",
+            "label": "Angular html elements",
+            "color": "#AECFC6",
+            "text": "ANG",
+            "count": 0,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "css",
+            "label": "Css",
+            "color": "#009900",
+            "text": "CSS",
+            "count": 0,
+            "foci": "topRight"
+        },
+        {
+            "keyword": "css-rule",
+            "label": "Css rules",
+            "color": "#006600",
+            "text": "CSS",
+            "count": 0,
+            "foci": "topRight"
+        },
+        {
+            "keyword": "css-markup",
+            "label": "Css Markups",
+            "color": "#00AA00",
+            "text": "CSS",
+            "count": 0,
+            "foci": "topRight"
+        },
+        {
+            "keyword": "css-unreachable",
+            "label": "Unreachable Css",
+            "color": "#00BB00",
+            "text": "CSS",
+            "count": 0,
+            "foci": "topRight"
+        },
+        {
+            "keyword": "link",
+            "label": "External Links",
+            "color": "#6699FF",
+            "text": "LINK",
+            "count": 0,
+            "foci": "centerRight"
+        },
+        {
+            "keyword": "anchor",
+            "label": "Anchor(#)",
+            "color": "#D462FF",
+            "text": "#",
+            "count": 0,
+            "foci": "centerRight"
+        },
+        {
+            "keyword": "email",
+            "label": "Email",
+            "color": "#009933",
+            "text": "@",
+            "count": 0,
+            "foci": "centerRight"
+        },
+        {
+            "keyword": "ajax",
+            "label": "AJAX Requests",
+            "color": "#0000FF",
+            "text": "AJAX",
+            "count": 0,
+            "foci": "centerLeft"
+        },
+        {
+            "keyword": "ws",
+            "label": "Web Services",
+            "color": "#CC3366",
+            "text": "WS",
+            "count": 0,
+            "foci": "bottomCenter"
+        },
+        {
+            "keyword": "php",
+            "label": "PHP",
+            "color": "#F2BFFF",
+            "text": "PHP",
+            "count": 0,
+            "foci": "bottomRight"
+        },
+        {
+            "keyword": "java-package",
+            "label": "JAVA packages",
+            "color": "#FFAA00",
+            "text": "JPCK",
+            "count": 0,
+            "foci": "bottomRight"
+        },
+        {
+            "keyword": "java-class",
+            "label": "JAVA classes",
+            "color": "#FFCC00",
+            "text": "JAVA",
+            "count": 0,
+            "foci": "bottomRight"
+        },
+        {
+            "keyword": "java-field",
+            "label": "JAVA fields",
+            "color": "#F87217",
+            "text": "FIELD",
+            "count": 0,
+            "foci": "bottomRight"
+        },
+        {
+            "keyword": "java-method",
+            "label": "JAVA methods",
+            "color": "#C85A17",
+            "text": "METH",
+            "count": 0,
+            "foci": "bottomRight"
+        },
+        {
+            "keyword": "jsp",
+            "label": "JAVA server page",
+            "color": "#C48CDB",
+            "text": "JSP",
+            "count": 0,
+            "foci": "bottomRight"
+        },
+        {
+            "keyword": "tpl",
+            "label": "Templates",
+            "color": "#0000FF",
+            "text": "TPL",
+            "count": 0,
+            "foci": "topLeft"
+        },
+        {
+            "keyword": "unknown",
+            "label": "Unknown",
+            "color": "#CCEBF5",
+            "text": "?",
+            "count": 0,
+            "foci": "center"
         }
-    }
+    ]
 }

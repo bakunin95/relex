@@ -36,6 +36,7 @@ relex.extract("path/to/webApp",false,function(err,report){
 
 ![Example](/example/result/example.png?raw=true "Example")
 
+
 run example/example.cmd in node console or node example.js
 
 ##EXAMPLE RESULT FOR A JS FILE
