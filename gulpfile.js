@@ -11,19 +11,19 @@ gulp.task('bump', function(){
 });
  
 
-
-
-
-
-gulp.task('tag', function () {
-  var pkg = require('./package.json');
-  var v = 'v' + pkg.version;
-  var message = 'Release ' + v;
-
+gulp.task('commit', function(){
   return gulp.src('./')
-    .pipe(git.commit(message))
-    //.pipe(git.tag(v, message))
-    .pipe(git.push('origin', 'master', "auto-commit "+message))
-    .pipe(gulp.dest('./'));
+  .pipe(git.commit('auto-commit'));
 });
  
+
+
+gulp.task('npm', function (done) {
+  require('child_process').spawn('npm', ['publish'], { stdio: 'inherit' })
+    .on('close', done);
+});
+
+gulp.task('push', function(){
+  git.push('origin', 'master', {args: " -f"})
+  .end();
+});
