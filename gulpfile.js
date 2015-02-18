@@ -22,7 +22,7 @@ gulp.task('tag', function () {
 
   return gulp.src('./')
     .pipe(git.commit(message))
-    .pipe(git.tag(v, message))
+    //.pipe(git.tag(v, message))
     .pipe(git.push('origin', 'master', '--tags'))
     .pipe(gulp.dest('./'));
 });
