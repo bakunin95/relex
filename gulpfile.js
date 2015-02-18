@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var bump = require('gulp-bump');
 var git = require('gulp-git');
- 
+ var exec = require('gulp-exec');
 
  
 // Define the key for versioning off 
@@ -25,16 +25,22 @@ gulp.task('prepare', function(){
   .pipe(git.commit("auto-commit"),{args: '-A'});
 */
 
-  git.setRemote('origin', 'https://github.com/bakunin95/relex', function (err) {
-    if (err) throw err;
-
-     git.push('origin', 'master', function (err) {
-	    if (err) throw err;
-	  });
-
-  });
+exec('git.exe push --progress "origin" master');
 
  
 
+});
+
+
+gulp.task('tag', function () {
+  var pkg = require('./package.json');
+  var v = 'v' + pkg.version;
+  var message = 'Release ' + v;
+
+  return gulp.src('./')
+    .pipe(git.commit(message))
+    .pipe(git.tag(v, message))
+    .pipe(git.push('origin', 'master', '--tags'))
+    .pipe(gulp.dest('./'));
 });
  
