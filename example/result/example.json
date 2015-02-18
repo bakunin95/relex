@@ -2,6 +2,7 @@
     "nodes": [
         {
             "name": "website_example/a.html",
+<<<<<<< HEAD
             "rawType": null,
             "rawName": null,
             "rawValue": null,
@@ -499,18 +500,495 @@
             "groupText": "JS-FUNC",
             "groupFoci": "bottomLeft",
             "id": 24
+=======
+            "group": "html",
+            "exist": true,
+            "data": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/a.css\">\r\n</head>\r\n<body>\r\n\t<a href=\"b.html\">link to b</a>\r\n\t<a href=\"c.html\">link to b</a>\r\n\r\n    <script src='js/s1.js'></script>\r\n\r\n</body>\r\n</html>\r\n",
+            "infoFile": {
+                "file": "a.html",
+                "folder": "website_example"
+            },
+            "id": 0,
+            "_id": "54c80e8570470e3019fd654f",
+            "cluster": 3,
+            "infoGroup": {
+                "color": "#FF0000",
+                "text": "HTML",
+                "foci": "center"
+            },
+            "time": "2015-01-27T22:17:41.628Z"
+        },
+        {
+            "name": "website_example/css/a.css",
+            "group": "css",
+            "exist": true,
+            "data": "p {\r\n    font-size: 12px;\r\n}",
+            "infoFile": {
+                "folder": "website_example/css",
+                "file": "a.css"
+            },
+            "id": 1,
+            "_id": "54c80e8570470e3019fd6551",
+            "cluster": 3,
+            "infoGroup": {
+                "color": "#009900",
+                "text": "CSS",
+                "foci": "topRight"
+            },
+            "time": "2015-01-27T22:17:41.644Z"
+        },
+        {
+            "name": "website_example/c.html",
+            "group": "html",
+            "exist": true,
+            "data": "<!DOCTYPE html>\n<html>\n<head>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/a.css\">\n</head>\n<body>\n    <script src='js/s.js'></script>\n    <script src='js/sClass.js'></script>\n</body>\n</html>",
+            "infoFile": {
+                "file": "c.html",
+                "folder": "website_example"
+            },
+            "id": 2,
+            "_id": "54c80e8570470e3019fd6552",
+            "cluster": 3,
+            "infoGroup": {
+                "color": "#FF0000",
+                "text": "HTML",
+                "foci": "center"
+            },
+            "time": "2015-01-27T22:17:41.644Z"
+        },
+        {
+            "name": "website_example/css/main.css",
+            "group": "css",
+            "exist": true,
+            "data": "body {\r\n    background-color: #ccc;\r\n}\r\nfoo {\r\n\t\r\n}\r\nbar {\r\n\r\n}\r\n",
+            "infoFile": {
+                "folder": "website_example/css",
+                "file": "main.css"
+            },
+            "id": 3,
+            "_id": "54c80e8570470e3019fd6553",
+            "cluster": 3,
+            "infoGroup": {
+                "color": "#009900",
+                "text": "CSS",
+                "foci": "topRight"
+            },
+            "time": "2015-01-27T22:17:41.644Z"
+        },
+        {
+            "name": "website_example/js/s.js",
+            "group": "js",
+            "exist": true,
+            "data": "alert(\"This is bar.js\");\n\nvar a;\nvar b;\nfunction barFunc(){\n\n}\n\nfunction barFuncB(){\n\n}",
+            "infoFile": {
+                "file": "s.js",
+                "folder": "website_example/js"
+            },
+            "id": 4,
+            "_id": "54c80e8570470e3019fd6554",
+            "cluster": 2,
+            "infoGroup": {
+                "color": "#0000FF",
+                "text": "JS",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:41.644Z"
+        },
+        {
+            "name": "website_example/js/s1.js",
+            "group": "js",
+            "exist": true,
+            "data": "var foo = require('data/data.json');",
+            "infoFile": {
+                "file": "s1.js",
+                "folder": "website_example/js"
+            },
+            "id": 5,
+            "_id": "54c80e8570470e3019fd6555",
+            "cluster": 2,
+            "infoGroup": {
+                "color": "#0000FF",
+                "text": "JS",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:41.644Z"
+        },
+        {
+            "name": "website_example/js/sClass.js",
+            "group": "js",
+            "exist": true,
+            "data": "alert(\"This is foo.js\");\nvar c;\nvar d;\n\n\nvar fooClass = {\n\tvarA: \"a\",\n\tvarB: \"b\",\n\tfooFuncA: function(){\n\n\t},\n\tfooFuncB: function(){\n\n\t}\n}\n",
+            "infoFile": {
+                "file": "sClass.js",
+                "folder": "website_example/js"
+            },
+            "id": 6,
+            "_id": "54c80e8570470e3019fd6556",
+            "cluster": 2,
+            "infoGroup": {
+                "color": "#0000FF",
+                "text": "JS",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:41.644Z"
+        },
+        {
+            "name": "website_example/b.html",
+            "group": "html",
+            "exist": true,
+            "data": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/main.css\">\r\n</head>\r\n<body>\r\n\t<a href=\"c.html\">link to b</a>\r\n    <script src='js/s.js'></script>\r\n</body>\r\n</html>\r\n",
+            "infoFile": {
+                "file": "b.html",
+                "folder": "website_example"
+            },
+            "id": 7,
+            "_id": "54c80e8570470e3019fd6550",
+            "cluster": 3,
+            "infoGroup": {
+                "color": "#FF0000",
+                "text": "HTML",
+                "foci": "center"
+            },
+            "time": "2015-01-27T22:17:41.644Z"
+        },
+        {
+            "name": "website_example/js/data/data.json.js",
+            "_id": "54c80e850932df3019b567ca",
+            "group": "js-unreachable",
+            "cluster": 3,
+            "id": 8,
+            "infoGroup": {
+                "color": "#6699FF",
+                "text": "JS",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/css/a.css[p]",
+            "_id": "54c80e850932df3019b567d0",
+            "rawName": "p",
+            "group": "css-rule",
+            "cluster": 1,
+            "id": 9,
+            "infoGroup": {
+                "color": "#006600",
+                "text": "CSS",
+                "foci": "topRight"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/js/sClass.js:[object]:fooClass:fooFuncB()",
+            "_id": "54c80e860932df3019b567e4",
+            "rawName": "fooFuncB()",
+            "rawValue": "",
+            "group": "js-method",
+            "data": {
+                "type": "Property",
+                "key": {
+                    "type": "Identifier",
+                    "name": "fooFuncB"
+                },
+                "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [],
+                    "defaults": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": []
+                    },
+                    "rest": null,
+                    "generator": false,
+                    "expression": false
+                },
+                "kind": "init"
+            },
+            "cluster": 1,
+            "id": 10,
+            "infoGroup": {
+                "color": "#E6A9EC",
+                "text": "JS-MET",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/css/main.css[foo]",
+            "_id": "54c80e850932df3019b567d4",
+            "rawName": "foo",
+            "group": "css-rule",
+            "cluster": 1,
+            "id": 11,
+            "infoGroup": {
+                "color": "#006600",
+                "text": "CSS",
+                "foci": "topRight"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/css/main.css[bar]",
+            "_id": "54c80e850932df3019b567d6",
+            "rawName": "bar",
+            "group": "css-rule",
+            "cluster": 1,
+            "id": 12,
+            "infoGroup": {
+                "color": "#006600",
+                "text": "CSS",
+                "foci": "topRight"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/js/s.js:[function]:barFunc()",
+            "_id": "54c80e860932df3019b567d8",
+            "rawName": "barFunc()",
+            "data": [],
+            "group": "js-function",
+            "cluster": 1,
+            "id": 13,
+            "infoGroup": {
+                "color": "#C45AEC",
+                "text": "JS-FUNC",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/js/s.js:[function]:barFuncB()",
+            "_id": "54c80e860932df3019b567da",
+            "rawName": "barFuncB()",
+            "data": [],
+            "group": "js-function",
+            "cluster": 1,
+            "id": 14,
+            "infoGroup": {
+                "color": "#C45AEC",
+                "text": "JS-FUNC",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/js/sClass.js:[object]:fooClass",
+            "_id": "54c80e860932df3019b567dc",
+            "rawName": "fooClass",
+            "data": [
+                {
+                    "kind": "init",
+                    "value": {
+                        "raw": "\"a\"",
+                        "value": "a",
+                        "type": "Literal"
+                    },
+                    "key": {
+                        "name": "varA",
+                        "type": "Identifier"
+                    },
+                    "type": "Property"
+                },
+                {
+                    "kind": "init",
+                    "value": {
+                        "raw": "\"b\"",
+                        "value": "b",
+                        "type": "Literal"
+                    },
+                    "key": {
+                        "name": "varB",
+                        "type": "Identifier"
+                    },
+                    "type": "Property"
+                },
+                {
+                    "kind": "init",
+                    "value": {
+                        "expression": false,
+                        "generator": false,
+                        "rest": null,
+                        "body": {
+                            "body": [],
+                            "type": "BlockStatement"
+                        },
+                        "defaults": [],
+                        "params": [],
+                        "id": null,
+                        "type": "FunctionExpression"
+                    },
+                    "key": {
+                        "name": "fooFuncA",
+                        "type": "Identifier"
+                    },
+                    "type": "Property"
+                },
+                {
+                    "kind": "init",
+                    "value": {
+                        "expression": false,
+                        "generator": false,
+                        "rest": null,
+                        "body": {
+                            "body": [],
+                            "type": "BlockStatement"
+                        },
+                        "defaults": [],
+                        "params": [],
+                        "id": null,
+                        "type": "FunctionExpression"
+                    },
+                    "key": {
+                        "name": "fooFuncB",
+                        "type": "Identifier"
+                    },
+                    "type": "Property"
+                }
+            ],
+            "group": "js-object",
+            "cluster": 1,
+            "id": 15,
+            "infoGroup": {
+                "color": "#B041FF",
+                "text": "JS-OBJ",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/js/sClass.js:[object]:fooClass:string varA:a",
+            "_id": "54c80e860932df3019b567de",
+            "rawName": "string varA:a",
+            "rawValue": "a",
+            "group": "js-variable",
+            "data": {
+                "type": "Property",
+                "key": {
+                    "type": "Identifier",
+                    "name": "varA"
+                },
+                "value": {
+                    "type": "Literal",
+                    "value": "a",
+                    "raw": "\"a\""
+                },
+                "kind": "init"
+            },
+            "cluster": 1,
+            "id": 16,
+            "infoGroup": {
+                "color": "#C38EC7",
+                "text": "JS-VAR",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/js/sClass.js:[object]:fooClass:string varB:b",
+            "_id": "54c80e860932df3019b567e0",
+            "rawName": "string varB:b",
+            "rawValue": "b",
+            "group": "js-variable",
+            "data": {
+                "type": "Property",
+                "key": {
+                    "type": "Identifier",
+                    "name": "varB"
+                },
+                "value": {
+                    "type": "Literal",
+                    "value": "b",
+                    "raw": "\"b\""
+                },
+                "kind": "init"
+            },
+            "cluster": 1,
+            "id": 17,
+            "infoGroup": {
+                "color": "#C38EC7",
+                "text": "JS-VAR",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/js/sClass.js:[object]:fooClass:fooFuncA()",
+            "_id": "54c80e860932df3019b567e2",
+            "rawName": "fooFuncA()",
+            "rawValue": "",
+            "group": "js-method",
+            "data": {
+                "type": "Property",
+                "key": {
+                    "type": "Identifier",
+                    "name": "fooFuncA"
+                },
+                "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [],
+                    "defaults": [],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": []
+                    },
+                    "rest": null,
+                    "generator": false,
+                    "expression": false
+                },
+                "kind": "init"
+            },
+            "cluster": 1,
+            "id": 18,
+            "infoGroup": {
+                "color": "#E6A9EC",
+                "text": "JS-MET",
+                "foci": "bottomLeft"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+        },
+        {
+            "name": "website_example/css/main.css[body]",
+            "_id": "54c80e850932df3019b567d2",
+            "rawName": "body",
+            "group": "css-rule",
+            "cluster": 1,
+            "id": 19,
+            "infoGroup": {
+                "color": "#006600",
+                "text": "CSS",
+                "foci": "topRight"
+            },
+            "time": "2015-01-27T22:17:42.050Z"
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
         }
     ],
     "links": [
         {
+<<<<<<< HEAD
             "source": 0,
             "target": 8,
             "relVar": "",
             "type": "",
             "id": 1
+=======
+            "target": 7,
+            "source": 0,
+            "_id": "54c80e850932df3019b567c4",
+            "type": "link"
         },
         {
+            "target": 2,
+            "source": 7,
+            "_id": "54c80e850932df3019b567c5",
+            "type": "link"
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
+        },
+        {
+            "target": 2,
             "source": 0,
+<<<<<<< HEAD
             "target": 9,
             "relVar": "",
             "type": "",
@@ -571,9 +1049,51 @@
             "relVar": "",
             "type": "",
             "id": 10
+=======
+            "_id": "54c80e850932df3019b567c6",
+            "type": "link"
         },
         {
+            "target": 1,
+            "source": 0,
+            "_id": "54c80e850932df3019b567c7",
+            "type": "link"
+        },
+        {
+            "target": 3,
+            "source": 7,
+            "_id": "54c80e850932df3019b567c8",
+            "type": "link"
+        },
+        {
+            "target": 1,
             "source": 2,
+            "_id": "54c80e850932df3019b567c9",
+            "type": "link"
+        },
+        {
+            "target": 8,
+            "source": 5,
+            "_id": "54c80e850932df3019b567cb",
+            "type": "js2js"
+        },
+        {
+            "target": 5,
+            "source": 0,
+            "_id": "54c80e850932df3019b567cc",
+            "type": "use"
+        },
+        {
+            "target": 4,
+            "source": 7,
+            "_id": "54c80e850932df3019b567cd",
+            "type": "use"
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
+        },
+        {
+            "target": 4,
+            "source": 2,
+<<<<<<< HEAD
             "target": 18,
             "relVar": "",
             "type": "",
@@ -620,6 +1140,75 @@
             "relVar": "",
             "type": "",
             "id": 17
+=======
+            "_id": "54c80e850932df3019b567ce",
+            "type": "use"
+        },
+        {
+            "target": 6,
+            "source": 2,
+            "_id": "54c80e850932df3019b567cf",
+            "type": "use"
+        },
+        {
+            "target": 9,
+            "source": 1,
+            "_id": "54c80e850932df3019b567d1",
+            "type": "composition"
+        },
+        {
+            "target": 19,
+            "source": 3,
+            "_id": "54c80e850932df3019b567d3",
+            "type": "composition"
+        },
+        {
+            "target": 11,
+            "source": 3,
+            "_id": "54c80e850932df3019b567d5",
+            "type": "composition"
+        },
+        {
+            "target": 12,
+            "source": 3,
+            "_id": "54c80e860932df3019b567d7",
+            "type": "composition"
+        },
+        {
+            "target": 13,
+            "source": 4,
+            "_id": "54c80e860932df3019b567d9"
+        },
+        {
+            "target": 14,
+            "source": 4,
+            "_id": "54c80e860932df3019b567db"
+        },
+        {
+            "target": 15,
+            "source": 6,
+            "_id": "54c80e860932df3019b567dd"
+        },
+        {
+            "target": 16,
+            "source": 15,
+            "_id": "54c80e860932df3019b567df"
+        },
+        {
+            "target": 17,
+            "source": 15,
+            "_id": "54c80e860932df3019b567e1"
+        },
+        {
+            "target": 18,
+            "source": 15,
+            "_id": "54c80e860932df3019b567e3"
+        },
+        {
+            "target": 10,
+            "source": 15,
+            "_id": "54c80e860932df3019b567e5"
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
         }
     ],
     "groups": [
@@ -628,7 +1217,11 @@
             "label": "Html",
             "color": "#FF0000",
             "text": "HTML",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 3,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "center"
         },
         {
@@ -660,7 +1253,11 @@
             "label": "JavaScripts",
             "color": "#0000FF",
             "text": "JS",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 3,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "bottomLeft"
         },
         {
@@ -676,7 +1273,11 @@
             "label": "Unreachable JavaScripts",
             "color": "#6699FF",
             "text": "JS",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 1,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "bottomLeft"
         },
         {
@@ -684,7 +1285,11 @@
             "label": "JavaScripts objects",
             "color": "#B041FF",
             "text": "JS-OBJ",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 1,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "bottomLeft"
         },
         {
@@ -700,7 +1305,11 @@
             "label": "JavaScripts functions",
             "color": "#C45AEC",
             "text": "JS-FUNC",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 2,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "bottomLeft"
         },
         {
@@ -708,7 +1317,11 @@
             "label": "JavaScripts methods",
             "color": "#E6A9EC",
             "text": "JS-MET",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 2,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "bottomLeft"
         },
         {
@@ -716,11 +1329,19 @@
             "label": "JavaScripts variable",
             "color": "#C38EC7",
             "text": "JS-VAR",
+<<<<<<< HEAD
             "count": 0,
             "foci": "bottomLeft"
         },
         {
             "keyword": "js-method-call",
+=======
+            "count": 2,
+            "foci": "bottomLeft"
+        },
+        {
+            "keyword": "js-call",
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "label": "JavaScripts call",
             "color": "#CC99FF",
             "text": "JS-CALL",
@@ -756,7 +1377,11 @@
             "label": "Css",
             "color": "#009900",
             "text": "CSS",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 2,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "topRight"
         },
         {
@@ -764,7 +1389,11 @@
             "label": "Css rules",
             "color": "#006600",
             "text": "CSS",
+<<<<<<< HEAD
             "count": 0,
+=======
+            "count": 4,
+>>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
             "foci": "topRight"
         },
         {

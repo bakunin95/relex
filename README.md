@@ -59,87 +59,6 @@ run example/example.cmd in node console or node example.js
                 "functions": [],
                 "objects": []
             },
-            "report": [
-                {
-                    "id": "(error)",
-                    "raw": "'{a}' was used before it was defined.",
-                    "code": "used_before_a",
-                    "line": 1,
-                    "character": 11,
-                    "a": "require",
-                    "reason": "'require' was used before it was defined."
-                }
-            ],
-            "reportCount": 1,
-            "complexity": {
-                "aggregate": {
-                    "sloc": {
-                        "logical": 1,
-                        "physical": 1
-                    },
-                    "cyclomatic": 1,
-                    "halstead": {
-                        "operators": {
-                            "distinct": 3,
-                            "total": 3
-                        },
-                        "operands": {
-                            "distinct": 3,
-                            "total": 3
-                        },
-                        "length": 6,
-                        "vocabulary": 6,
-                        "difficulty": 1.5,
-                        "volume": 15.509775004326936,
-                        "effort": 23.264662506490403,
-                        "bugs": 0.005169925001442312,
-                        "time": 0.00035902256954460497
-                    },
-                    "params": 0,
-                    "line": 1,
-                    "cyclomaticDensity": 100
-                },
-                "functions": 0,
-                "dependencies": [
-                    {
-                        "line": 1,
-                        "path": "data/data.json",
-                        "type": "CommonJS"
-                    }
-                ],
-                "maintainability": 160.23748032084416,
-                "params": 0
-            },
-            "complexityNormalyzed": {
-                "sloc": {},
-                "aggregate": {
-                    "halstead": {
-                        "operators": {
-                            "distinct": 0.5,
-                            "total": 0.25
-                        },
-                        "operands": {
-                            "distinct": 0.25,
-                            "total": 0.21428571428571427
-                        },
-                        "lngth": null,
-                        "vocabulary": 0.3333333333333333,
-                        "difficulty": 0.42857142857142855,
-                        "volume": 0.14305528460401518,
-                        "effort": 0.061309407687435064,
-                        "bugs": 0.14305528460401518,
-                        "time": 0.061309407687435064
-                    },
-                    "cyclomatic": 1,
-                    "params": null,
-                    "line": 1,
-                    "cyclomaticDensity": 0
-                },
-                "maintainability": 0.9370612884259892,
-                "functions": 0,
-                "params": null,
-                "reportCount": 0.05263157894736842
-            }
         }
 ```
 
@@ -151,8 +70,7 @@ run example/example.cmd in node console or node example.js
 |name | name of the file
 |group |  group of the file
 |exist | if hosted on the server (true) else (false)
-|complexity | complexity metrics
-|complexityNormalyzed | normalyzed complexity metrics
+
 
 ##COMPOSITION (JS)
 |Type | Elements
@@ -169,16 +87,6 @@ run example/example.cmd in node console or node example.js
 |folder |  folder of the file
 |parentFolder |  folder of the parent
 
-##REPORT (JS/CSS)
-|Type | Elements
-|------|----------
-|id | ...
-|raw |  ...
-|code |  ...
-|line |  ...
-|character |  ...
-|a |  ...
-|reason |  ...
 
 ##LINKS
 |Type | Elements
