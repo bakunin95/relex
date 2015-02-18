@@ -3,7 +3,6 @@ var libGroups = require("./lib/deps/languages/libGroups.js");
 var path = require("path");
 var exec = require('child_process').exec;
 var fs = require('graceful-fs');
-var json2csv = require('json2csv');
 var db = require('./lib/deps/database.js');
 var lineReader = require('line-reader');
 var async = require('async');
