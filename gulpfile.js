@@ -13,21 +13,6 @@ gulp.task('bump', function(){
 
 
 
-gulp.task('prepare', function(){
- /* gulp.src('./package.json')
-  .pipe(bump({key: "version"}))
-  .pipe(gulp.dest('./'));
-*/
-
-/*
-  gulp.src('./*','!./node_modules/**')
-  .pipe(git.commit("auto-commit"),{args: '-A'});
-*/
-
-
- 
-
-});
 
 
 gulp.task('tag', function () {
