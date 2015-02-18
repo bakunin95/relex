@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var bump = require('gulp-bump');
 var git = require('gulp-git');
- var exec = require('gulp-exec');
 
  
 // Define the key for versioning off 
@@ -25,7 +24,6 @@ gulp.task('prepare', function(){
   .pipe(git.commit("auto-commit"),{args: '-A'});
 */
 
-exec('git.exe push --progress "origin" master');
 
  
 
