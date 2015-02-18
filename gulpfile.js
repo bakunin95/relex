@@ -15,12 +15,26 @@ gulp.task('bump', function(){
 
 
 gulp.task('prepare', function(){
-  gulp.src('./package.json')
+ /* gulp.src('./package.json')
   .pipe(bump({key: "version"}))
   .pipe(gulp.dest('./'));
+*/
 
-  gulp.src('./*')
-  .pipe(git.commit("auto-commit"));
+/*
+  gulp.src('./*','!./node_modules/**')
+  .pipe(git.commit("auto-commit"),{args: '-A'});
+*/
+
+  git.setRemote('origin', 'https://github.com/bakunin95/relex', function (err) {
+    if (err) throw err;
+
+     git.push('origin', 'master', function (err) {
+	    if (err) throw err;
+	  });
+
+  });
+
+ 
 
 });
  
