@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var bump = require('gulp-bump');
 var git = require('gulp-git');
+ var spawn = require('child_process').spawn;
 
  
 // Define the key for versioning off 
@@ -18,10 +19,10 @@ gulp.task('commit', function(){
  
 
 
+ 
 gulp.task('npm', function (done) {
-  require('child_process').spawn('npm', ['publish'], { stdio: 'inherit' })
-    .on('close', done);
-});
+spawn('npm', ['publish'], { stdio: 'inherit' }).on('close', done);
+}); 
 
 gulp.task('push', function(){
   git.push('origin', 'master', {args: " -f"})

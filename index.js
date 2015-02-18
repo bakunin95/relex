@@ -5,7 +5,6 @@ var exec = require('child_process').exec;
 var fs = require('graceful-fs');
 var json2csv = require('json2csv');
 var db = require('./lib/deps/database.js');
-<<<<<<< HEAD
 var lineReader = require('line-reader');
 var async = require('async');
 var resultFile = path.resolve(__dirname+'/../../app/data/result.csv')
@@ -23,7 +22,6 @@ exports.extract = function(website_path,include_node_modules,callback) {
 	
 	});
 };
-=======
 
 
 var async = require('async');
@@ -42,18 +40,3 @@ exports.extract = function(website_path,include_node_modules,callback) {
 		});		
 	});	
 };
-
-
-
-		/*exec('mongoexport --db archvis --collection nodes --out ../data/nodes.json --jsonArray ',{cwd: parentDir}, function (error, stdout, stderr) {
-			exec('mongoexport --db archvis --collection links --out ../data/links.json --jsonArray',{cwd: parentDir}, function (error, stdout, stderr) {
-				exec('mongoexport --db archvis --collection nodes --csv --out ../data/nodes.csv --fields id,name,group,exist',{cwd: parentDir}, function (error, stdout, stderr) {
-					exec('mongoexport --db archvis --collection links --csv --out ../data/links.csv --fields source,target,type',{cwd: parentDir}, function (error, stdout, stderr) {
-						fs.writeFile(__dirname+"/data/groups.json",JSON.stringify(libGroups.groups), function(err) {				
-							json2csv({data: libGroups.groups, fields: ['keyword', 'label', 'color','text','count']}, function(err, csv) {
-							  if (err) console.log(err);
-							  fs.writeFile(__dirname+"/data/groups.csv", csv, function(err) {
-							    if (err) throw err;*/
-
-							    											   	//fs.writeFile(__dirname+"/data/graphe.json", JSON.stringify({"nodes":sortedNodes,"links":links,"groups":libGroups.groups}), function(err) {
->>>>>>> 1b6cd69c802ab730b60e42bde85f3d585a6c92f1
